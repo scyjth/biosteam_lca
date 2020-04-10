@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:ns2="http://openlca.org/ecospold2-extensions" xmlns:ns3="http://www.EcoInvent.org/UsedUserMasterData">
+    <activityDataset>
+        <activityDescription>
+            <activity id="f026c6e4-88a4-0f41-5ad5-17f078c77520" activityNameId="56f23e12-8a7c-47d2-a35d-4ddc032cc492" type="1" specialActivityType="0">
+                <activityName>soybeans; at harvest in multiple production years; at farm; 85%-92% moisture</activityName>
+                <generalComment>
+                    <text xml:lang="en" index="1">
+This unit process/ gate-to-gate data set represents the production of 1 kg soybeans. Coproduction with residue over multiple years is captured in the referenced intermediate flow datasets.  Accounting multiple years of crop production is intended to capture the variability in (e.g., yield, irrigation, and nutrient applications) that comes from differences in weather and operations from year to year.   Applicable classifications include ISIC 0111, NAIC 111110, UNSPSC 50407053; this dataset was prepared in ILCD format using the UWDFE Lab Excel to ILCD File Generator (beta version, August 2013)
+</text>
+                </generalComment>
+            </activity>
+            <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+                <shortname>GLO</shortname>
+                <comment>
+                    <text xml:lang="en" index="1">The unit process is assumed to represent production in North Carolina (US State).</text>
+                </comment>
+            </geography>
+            <technology technologyLevel="0">
+                <comment>
+                    <text xml:lang="en" index="1">This process produces soybeans; at harvest in multiple production years; at farm; 85%-92% moisture. The process is assumed to represent production in North Carolina (US State). Yields and related inputs and outputs represent 6 years of production and are thus intended to capture variation from year to year. This dataset includes consideration of crop production over 6 years.</text>
+                </comment>
+            </technology>
+            <timePeriod startDate="1997-01-02T00:00:00-06:00" endDate="2007-01-01T00:00:00-06:00" isDataValidForEntirePeriod="true">
+                <comment>
+                    <text xml:lang="en" index="1">Start and end dates match the underlying data obtained from the USDA Agricultural Resource Management Survey (ARMS).</text>
+                </comment>
+            </timePeriod>
+            <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+                <name>Business-as-Usual</name>
+            </macroEconomicScenario>
+        </activityDescription>
+        <flowData>
+            <intermediateExchange id="00000000-0017-d588-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="fd940422-e5de-1633-3f63-dfd1a3200881">
+                <name>soybeans; at harvest in multiple production years; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <outputGroup>0</outputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0017-d58e-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.193117525681702" mathematicalRelation="0.193117525681702" intermediateExchangeId="b8eb3169-795c-681c-9675-09f3f8b6a951">
+                <name>soybeans; at harvest in 2006; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0017-d58b-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.196134987020479" mathematicalRelation="0.196134987020479" intermediateExchangeId="9fa06124-5a8c-a686-d16e-d0f590ced7ec">
+                <name>soybeans; at harvest in 2000; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0017-d58d-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.132679550043265" mathematicalRelation="0.132679550043265" intermediateExchangeId="3446ba39-32e2-e714-bdb8-13c1c44da116">
+                <name>soybeans; at harvest in 1999; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0017-d58a-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.13738323977724" mathematicalRelation="0.13738323977724" intermediateExchangeId="a45bd0eb-28a3-10fc-82aa-6d73321eee91">
+                <name>soybeans; at harvest in 2002; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0017-d589-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.171152182112667" mathematicalRelation="0.171152182112667" intermediateExchangeId="53e5a794-2e5f-545c-794b-1a4795bcf4a0">
+                <name>soybeans; at harvest in 1997; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0017-d58c-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.169532515364647" mathematicalRelation="0.169532515364647" intermediateExchangeId="6ee3c624-e5ec-2c00-03e8-73536c7b465d">
+                <name>soybeans; at harvest in 1998; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+        </flowData>
+        <modellingAndValidation>
+            <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+                <systemModelName>Allocation, ecoinvent default</systemModelName>
+                <samplingProcedure>As reflected in the referenced intermediate flow datasets, a delete-a-group jackknife is used by the USDA to estimate the ARMS sample means and RSEs, based on a  sample delete-a-group jackknife.   Because of this relatively small sample size, a Students t distribution is used to represent ARMS data probability density functions.  Other representations of uncertainty are described in Cooper, J.S., Kahn, E., Noon, M. (2012). LCA Digital Commons Unit Process Data: field crop production Version 1.  Prepared for the US Department of Agriculture National Agricultural Library.  Retrieved from https://www.lcacommons.gov/discovery/docs/LCA%20Digital%20Commons%20Unit%20Process%20Data%20final%20updated.pdf</samplingProcedure>
+                <extrapolations>Data represent an aggregation of processes applied in North Carolina from 1997 to 2006. Data development in the referenced intermediate flow datasets is demonstrated by parameterization (exlicitly presents all raw and uncertainty data and all calculations).</extrapolations>
+            </representativeness>
+        </modellingAndValidation>
+        <administrativeInformation>
+            <dataEntryBy personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="Joyce Cooper" personEmail="cooperjs@u.washington.edu"/>
+            <dataGeneratorAndPublication personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="cooperjs@u.washington.edu" personEmail="cooperjs@u.washington.edu" isCopyrightProtected="false"/>
+            <fileAttributes majorRelease="1" minorRelease="1" majorRevision="0" minorRevision="0" defaultLanguage="en" creationTimestamp="2013-08-28T00:00:00-05:00" lastEditTimestamp="2017-11-02T05:45:22.461-05:00" internalSchemaVersion="1.0" fileGenerator="openLCA" fileTimestamp="2019-08-13T19:38:45.352-05:00"/>
+        </administrativeInformation>
+        <ns3:usedUserMasterData>
+            <activityNames id="56f23e12-8a7c-47d2-a35d-4ddc032cc492">
+                <name>soybeans; at harvest in multiple production years; at farm; 85%-92% moisture</name>
+            </activityNames>
+            <companies id="b35ea934-b41d-4830-b1aa-c7c678270240" code="UKNWN">
+                <name>Unknown</name>
+                <comment>This is a default entry as we cannot create persons without company information for the EcoEditor.</comment>
+            </companies>
+            <persons id="934566ed-a6d1-07d7-0af7-3256238a26cc" name="Joyce Cooper" address="" telephone="(206) 616-3270" email="cooperjs@u.washington.edu" companyId="b35ea934-b41d-4830-b1aa-c7c678270240">
+                <companyName>UKNWN</companyName>
+            </persons>
+            <intermediateExchanges id="fd940422-e5de-1633-3f63-dfd1a3200881" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in multiple production years; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="b8eb3169-795c-681c-9675-09f3f8b6a951" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in 2006; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="9fa06124-5a8c-a686-d16e-d0f590ced7ec" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in 2000; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="3446ba39-32e2-e714-bdb8-13c1c44da116" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in 1999; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="a45bd0eb-28a3-10fc-82aa-6d73321eee91" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in 2002; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="53e5a794-2e5f-545c-794b-1a4795bcf4a0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in 1997; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="6ee3c624-e5ec-2c00-03e8-73536c7b465d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>soybeans; at harvest in 1998; at farm; 85%-92% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <activityIndexEntries id="f026c6e4-88a4-0f41-5ad5-17f078c77520" activityNameId="56f23e12-8a7c-47d2-a35d-4ddc032cc492" geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a" startDate="1997-01-02T00:00:00-06:00" endDate="2007-01-01T00:00:00-06:00" systemModelId="8b738ea0-f89e-4627-8679-433616064e82"/>
+        </ns3:usedUserMasterData>
+    </activityDataset>
+</ecoSpold>

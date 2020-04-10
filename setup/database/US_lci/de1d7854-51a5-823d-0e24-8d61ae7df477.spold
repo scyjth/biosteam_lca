@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:ns2="http://openlca.org/ecospold2-extensions" xmlns:ns3="http://www.EcoInvent.org/UsedUserMasterData">
+    <activityDataset>
+        <activityDescription>
+            <activity id="de1d7854-51a5-823d-0e24-8d61ae7df477" activityNameId="9761080e-2518-4767-a097-7c5a2c2d01e4" type="1" specialActivityType="0">
+                <activityName>durum wheat; at harvest in multiple production years; at farm; 88%-89% moisture</activityName>
+                <generalComment>
+                    <text xml:lang="en" index="1">
+This unit process/ gate-to-gate data set represents the production of 1 kg spring wheat (excl. durum). Coproduction with residue over multiple years is captured in the referenced intermediate flow datasets.  Accounting multiple years of crop production is intended to capture the variability in (e.g., yield, irrigation, and nutrient applications) that comes from differences in weather and operations from year to year.   Applicable classifications include ISIC 0111, NAIC 111140, UNSPSC 50221101; this dataset was prepared in ILCD format using the UWDFE Lab Excel to ILCD File Generator (beta version, August 2013)
+</text>
+                </generalComment>
+            </activity>
+            <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+                <shortname>GLO</shortname>
+                <comment>
+                    <text xml:lang="en" index="1">The unit process is assumed to represent production in North Dakota (US State).</text>
+                </comment>
+            </geography>
+            <technology technologyLevel="0">
+                <comment>
+                    <text xml:lang="en" index="1">This process produces durum wheat; at harvest in multiple production years; at farm; 88%-89% moisture. The process is assumed to represent production in North Dakota (US State). Yields and related inputs and outputs represent 6 years of production and are thus intended to capture variation from year to year. This dataset includes consideration of crop production over 6 years.</text>
+                </comment>
+            </technology>
+            <timePeriod startDate="1996-01-02T00:00:00-06:00" endDate="2010-01-01T00:00:00-06:00" isDataValidForEntirePeriod="true">
+                <comment>
+                    <text xml:lang="en" index="1">Start and end dates match the underlying data obtained from the USDA Agricultural Resource Management Survey (ARMS).</text>
+                </comment>
+            </timePeriod>
+            <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+                <name>Business-as-Usual</name>
+            </macroEconomicScenario>
+        </activityDescription>
+        <flowData>
+            <intermediateExchange id="00000000-0016-3078-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="30c0ed08-97ea-2e3d-3378-825725285d24">
+                <name>durum wheat; at harvest in multiple production years; at farm; 88%-89% moisture</name>
+                <unitName>kg</unitName>
+                <outputGroup>0</outputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0016-307e-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.140607835957525" mathematicalRelation="0.140607835957525" intermediateExchangeId="45887c9d-b258-1157-266e-708f09557590">
+                <name>spring wheat, excl. durum; at harvest in 1998; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0016-307a-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.208714756499451" mathematicalRelation="0.208714756499451" intermediateExchangeId="e5f26793-f5f8-a50e-fd5f-4338191b6e5c">
+                <name>spring wheat, excl. durum; at harvest in 1996; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0016-3079-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.139808927798675" mathematicalRelation="0.139808927798675" intermediateExchangeId="4ac909f6-2269-9060-3bc1-2986b9458599">
+                <name>spring wheat, excl. durum; at harvest in 1997; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0016-307d-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.192936320362172" mathematicalRelation="0.192936320362172" intermediateExchangeId="085dcf4e-5b5c-0272-50e2-941d9834f2ce">
+                <name>spring wheat, excl. durum; at harvest in 2009; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0016-307b-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.162411371126128" mathematicalRelation="0.162411371126128" intermediateExchangeId="d2d9962d-c239-a5fa-578f-d9077b49ba86">
+                <name>spring wheat, excl. durum; at harvest in 2004; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0016-307c-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.15552078825605" mathematicalRelation="0.15552078825605" intermediateExchangeId="0f88bdc7-511e-aefd-9411-80e6f8f3cf04">
+                <name>spring wheat, excl. durum; at harvest in 2000; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+        </flowData>
+        <modellingAndValidation>
+            <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+                <systemModelName>Allocation, ecoinvent default</systemModelName>
+                <samplingProcedure>As reflected in the referenced intermediate flow datasets, a delete-a-group jackknife is used by the USDA to estimate the ARMS sample means and RSEs, based on a  sample delete-a-group jackknife.   Because of this relatively small sample size, a Students t distribution is used to represent ARMS data probability density functions.  Other representations of uncertainty are described in Cooper, J.S., Kahn, E., Noon, M. (2012). LCA Digital Commons Unit Process Data: field crop production Version 1.  Prepared for the US Department of Agriculture National Agricultural Library.  Retrieved from https://www.lcacommons.gov/discovery/docs/LCA%20Digital%20Commons%20Unit%20Process%20Data%20final%20updated.pdf</samplingProcedure>
+                <extrapolations>Data represent an aggregation of processes applied in North Dakota from 1996 to 2009. Data development in the referenced intermediate flow datasets is demonstrated by parameterization (exlicitly presents all raw and uncertainty data and all calculations).</extrapolations>
+            </representativeness>
+        </modellingAndValidation>
+        <administrativeInformation>
+            <dataEntryBy personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="Joyce Cooper" personEmail="cooperjs@u.washington.edu"/>
+            <dataGeneratorAndPublication personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="cooperjs@u.washington.edu" personEmail="cooperjs@u.washington.edu" isCopyrightProtected="false"/>
+            <fileAttributes majorRelease="1" minorRelease="1" majorRevision="0" minorRevision="0" defaultLanguage="en" creationTimestamp="2013-08-28T00:00:00-05:00" lastEditTimestamp="2017-11-02T05:45:21.886-05:00" internalSchemaVersion="1.0" fileGenerator="openLCA" fileTimestamp="2019-08-13T19:38:32.652-05:00"/>
+        </administrativeInformation>
+        <ns3:usedUserMasterData>
+            <activityNames id="9761080e-2518-4767-a097-7c5a2c2d01e4">
+                <name>durum wheat; at harvest in multiple production years; at farm; 88%-89% moisture</name>
+            </activityNames>
+            <companies id="b35ea934-b41d-4830-b1aa-c7c678270240" code="UKNWN">
+                <name>Unknown</name>
+                <comment>This is a default entry as we cannot create persons without company information for the EcoEditor.</comment>
+            </companies>
+            <persons id="934566ed-a6d1-07d7-0af7-3256238a26cc" name="Joyce Cooper" address="" telephone="(206) 616-3270" email="cooperjs@u.washington.edu" companyId="b35ea934-b41d-4830-b1aa-c7c678270240">
+                <companyName>UKNWN</companyName>
+            </persons>
+            <intermediateExchanges id="30c0ed08-97ea-2e3d-3378-825725285d24" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>durum wheat; at harvest in multiple production years; at farm; 88%-89% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="45887c9d-b258-1157-266e-708f09557590" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>spring wheat, excl. durum; at harvest in 1998; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="e5f26793-f5f8-a50e-fd5f-4338191b6e5c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>spring wheat, excl. durum; at harvest in 1996; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="4ac909f6-2269-9060-3bc1-2986b9458599" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>spring wheat, excl. durum; at harvest in 1997; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="085dcf4e-5b5c-0272-50e2-941d9834f2ce" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>spring wheat, excl. durum; at harvest in 2009; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="d2d9962d-c239-a5fa-578f-d9077b49ba86" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>spring wheat, excl. durum; at harvest in 2004; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="0f88bdc7-511e-aefd-9411-80e6f8f3cf04" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>spring wheat, excl. durum; at harvest in 2000; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <activityIndexEntries id="de1d7854-51a5-823d-0e24-8d61ae7df477" activityNameId="9761080e-2518-4767-a097-7c5a2c2d01e4" geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a" startDate="1996-01-02T00:00:00-06:00" endDate="2010-01-01T00:00:00-06:00" systemModelId="8b738ea0-f89e-4627-8679-433616064e82"/>
+        </ns3:usedUserMasterData>
+    </activityDataset>
+</ecoSpold>

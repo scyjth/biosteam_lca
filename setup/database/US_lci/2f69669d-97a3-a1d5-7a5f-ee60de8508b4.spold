@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:ns2="http://openlca.org/ecospold2-extensions" xmlns:ns3="http://www.EcoInvent.org/UsedUserMasterData">
+    <activityDataset>
+        <activityDescription>
+            <activity id="2f69669d-97a3-a1d5-7a5f-ee60de8508b4" activityNameId="70f91f9a-8e94-42f2-a9b9-a47724975861" type="1" specialActivityType="0">
+                <activityName>cotton lint; at harvest in multiple production years; at farm; 90%-93% moisture</activityName>
+                <generalComment>
+                    <text xml:lang="en" index="1">
+This unit process/ gate-to-gate data set represents the production of 1 kg cotton. Coproduction with cottonseed and residue over multiple years is captured in the referenced intermediate flow datasets.  Accounting multiple years of crop production is intended to capture the variability in (e.g., yield, irrigation, and nutrient applications) that comes from differences in weather and operations from year to year.   Applicable classifications include ISIC 0116, NAIC 111920, UNSPSC 11121802; this dataset was prepared in ILCD format using the UWDFE Lab Excel to ILCD File Generator (beta version, August 2013)
+</text>
+                </generalComment>
+            </activity>
+            <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+                <shortname>GLO</shortname>
+                <comment>
+                    <text xml:lang="en" index="1">The unit process is assumed to represent production in Mississippi (US State).</text>
+                </comment>
+            </geography>
+            <technology technologyLevel="0">
+                <comment>
+                    <text xml:lang="en" index="1">This process produces cotton lint; at harvest in multiple production years; at farm; 90%-93% moisture. The process is assumed to represent production in Mississippi (US State). Yields and related inputs and outputs represent 7 years of production and are thus intended to capture variation from year to year. This dataset includes consideration of crop production over 7 years.</text>
+                </comment>
+            </technology>
+            <timePeriod startDate="1996-01-02T00:00:00-06:00" endDate="2008-01-01T00:00:00-06:00" isDataValidForEntirePeriod="true">
+                <comment>
+                    <text xml:lang="en" index="1">Start and end dates match the underlying data obtained from the USDA Agricultural Resource Management Survey (ARMS).</text>
+                </comment>
+            </timePeriod>
+            <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+                <name>Business-as-Usual</name>
+            </macroEconomicScenario>
+        </activityDescription>
+        <flowData>
+            <intermediateExchange id="00000000-0005-820a-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="6f514073-d576-b625-18e7-34c63ebe9ec9">
+                <name>cotton lint; at harvest in multiple production years; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <outputGroup>0</outputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-8211-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.120123117877049" mathematicalRelation="0.120123117877049" intermediateExchangeId="2ea4910c-3825-1e73-0fd3-f378ca72be1e">
+                <name>cotton lint; at harvest in 1998; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-820c-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.109641460776974" mathematicalRelation="0.109641460776974" intermediateExchangeId="85921ebc-c877-590c-f272-8a997d90abcb">
+                <name>cotton lint; at harvest in 2007; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-8210-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.151484901422511" mathematicalRelation="0.151484901422511" intermediateExchangeId="b93211cb-add8-8b2a-2ae9-4a3ad896519b">
+                <name>cotton lint; at harvest in 1997; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-820f-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.142334248398636" mathematicalRelation="0.142334248398636" intermediateExchangeId="f98a70ab-a4d2-fff0-ec34-ed482dd02de9">
+                <name>cotton lint; at harvest in 2000; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-820d-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.156060227934448" mathematicalRelation="0.156060227934448" intermediateExchangeId="3f50cf5c-973a-889a-715c-159252b8a5dd">
+                <name>cotton lint; at harvest in 1996; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-820e-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.176358040096498" mathematicalRelation="0.176358040096498" intermediateExchangeId="0d2dc74e-0546-4a4b-f307-858789168265">
+                <name>cotton lint; at harvest in 2003; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0005-820b-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.143998003493886" mathematicalRelation="0.143998003493886" intermediateExchangeId="7010915c-9877-28f9-766a-8392c30c6a0c">
+                <name>cotton lint; at harvest in 1999; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+        </flowData>
+        <modellingAndValidation>
+            <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+                <systemModelName>Allocation, ecoinvent default</systemModelName>
+                <samplingProcedure>As reflected in the referenced intermediate flow datasets, a delete-a-group jackknife is used by the USDA to estimate the ARMS sample means and RSEs, based on a  sample delete-a-group jackknife.   Because of this relatively small sample size, a Students t distribution is used to represent ARMS data probability density functions.  Other representations of uncertainty are described in Cooper, J.S., Kahn, E., Noon, M. (2012). LCA Digital Commons Unit Process Data: field crop production Version 1.  Prepared for the US Department of Agriculture National Agricultural Library.  Retrieved from https://www.lcacommons.gov/discovery/docs/LCA%20Digital%20Commons%20Unit%20Process%20Data%20final%20updated.pdf</samplingProcedure>
+                <extrapolations>Data represent an aggregation of processes applied in Mississippi from 1996 to 2007. Data development in the referenced intermediate flow datasets is demonstrated by parameterization (exlicitly presents all raw and uncertainty data and all calculations).</extrapolations>
+            </representativeness>
+        </modellingAndValidation>
+        <administrativeInformation>
+            <dataEntryBy personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="Joyce Cooper" personEmail="cooperjs@u.washington.edu"/>
+            <dataGeneratorAndPublication personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="cooperjs@u.washington.edu" personEmail="cooperjs@u.washington.edu" isCopyrightProtected="false"/>
+            <fileAttributes majorRelease="1" minorRelease="1" majorRevision="0" minorRevision="0" defaultLanguage="en" creationTimestamp="2013-08-28T00:00:00-05:00" lastEditTimestamp="2017-11-02T05:45:23.449-05:00" internalSchemaVersion="1.0" fileGenerator="openLCA" fileTimestamp="2019-08-13T19:34:15.211-05:00"/>
+        </administrativeInformation>
+        <ns3:usedUserMasterData>
+            <activityNames id="70f91f9a-8e94-42f2-a9b9-a47724975861">
+                <name>cotton lint; at harvest in multiple production years; at farm; 90%-93% moisture</name>
+            </activityNames>
+            <companies id="b35ea934-b41d-4830-b1aa-c7c678270240" code="UKNWN">
+                <name>Unknown</name>
+                <comment>This is a default entry as we cannot create persons without company information for the EcoEditor.</comment>
+            </companies>
+            <persons id="934566ed-a6d1-07d7-0af7-3256238a26cc" name="Joyce Cooper" address="" telephone="(206) 616-3270" email="cooperjs@u.washington.edu" companyId="b35ea934-b41d-4830-b1aa-c7c678270240">
+                <companyName>UKNWN</companyName>
+            </persons>
+            <intermediateExchanges id="6f514073-d576-b625-18e7-34c63ebe9ec9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in multiple production years; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="2ea4910c-3825-1e73-0fd3-f378ca72be1e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 1998; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="85921ebc-c877-590c-f272-8a997d90abcb" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 2007; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="b93211cb-add8-8b2a-2ae9-4a3ad896519b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 1997; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="f98a70ab-a4d2-fff0-ec34-ed482dd02de9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 2000; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="3f50cf5c-973a-889a-715c-159252b8a5dd" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 1996; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="0d2dc74e-0546-4a4b-f307-858789168265" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 2003; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="7010915c-9877-28f9-766a-8392c30c6a0c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>cotton lint; at harvest in 1999; at farm; 90%-93% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <activityIndexEntries id="2f69669d-97a3-a1d5-7a5f-ee60de8508b4" activityNameId="70f91f9a-8e94-42f2-a9b9-a47724975861" geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a" startDate="1996-01-02T00:00:00-06:00" endDate="2008-01-01T00:00:00-06:00" systemModelId="8b738ea0-f89e-4627-8679-433616064e82"/>
+        </ns3:usedUserMasterData>
+    </activityDataset>
+</ecoSpold>

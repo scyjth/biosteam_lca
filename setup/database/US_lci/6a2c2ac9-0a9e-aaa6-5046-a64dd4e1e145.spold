@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:ns2="http://openlca.org/ecospold2-extensions" xmlns:ns3="http://www.EcoInvent.org/UsedUserMasterData">
+    <activityDataset>
+        <activityDescription>
+            <activity id="6a2c2ac9-0a9e-aaa6-5046-a64dd4e1e145" activityNameId="c9062569-b861-4330-aadc-bebfacdfc8f3" type="1" specialActivityType="0">
+                <activityName>winter wheat; at harvest in multiple production years; at farm; 86%-90% moisture</activityName>
+                <generalComment>
+                    <text xml:lang="en" index="1">
+This unit process/ gate-to-gate data set represents the production of 1 kg winter wheat. Coproduction with residue over multiple years is captured in the referenced intermediate flow datasets.  Accounting multiple years of crop production is intended to capture the variability in (e.g., yield, irrigation, and nutrient applications) that comes from differences in weather and operations from year to year.   Applicable classifications include ISIC 0111, NAIC 111140, UNSPSC 50221101; this dataset was prepared in ILCD format using the UWDFE Lab Excel to ILCD File Generator (beta version, August 2013)
+</text>
+                </generalComment>
+            </activity>
+            <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+                <shortname>GLO</shortname>
+                <comment>
+                    <text xml:lang="en" index="1">The unit process is assumed to represent production in Oklahoma (US State).</text>
+                </comment>
+            </geography>
+            <technology technologyLevel="0">
+                <comment>
+                    <text xml:lang="en" index="1">This process produces winter wheat; at harvest in multiple production years; at farm; 86%-90% moisture. The process is assumed to represent production in Oklahoma (US State). Yields and related inputs and outputs represent 6 years of production and are thus intended to capture variation from year to year. This dataset includes consideration of crop production over 6 years.</text>
+                </comment>
+            </technology>
+            <timePeriod startDate="1996-01-02T00:00:00-06:00" endDate="2010-01-01T00:00:00-06:00" isDataValidForEntirePeriod="true">
+                <comment>
+                    <text xml:lang="en" index="1">Start and end dates match the underlying data obtained from the USDA Agricultural Resource Management Survey (ARMS).</text>
+                </comment>
+            </timePeriod>
+            <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+                <name>Business-as-Usual</name>
+            </macroEconomicScenario>
+        </activityDescription>
+        <flowData>
+            <intermediateExchange id="00000000-000b-0ac9-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="65de67a4-e8d1-ad5a-7dca-b37d105328a6">
+                <name>winter wheat; at harvest in multiple production years; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <outputGroup>0</outputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-000b-0ace-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.168814280647831" mathematicalRelation="0.168814280647831" intermediateExchangeId="064a0e45-65c9-f7b2-f9b4-13104ef18d4d">
+                <name>winter wheat; at harvest in 2000; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-000b-0aca-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.235134176616621" mathematicalRelation="0.235134176616621" intermediateExchangeId="695aba25-833e-bd0f-359c-305078edbacb">
+                <name>winter wheat; at harvest in 1998; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-000b-0acb-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0910273081924577" mathematicalRelation="0.0910273081924577" intermediateExchangeId="73f78060-f621-f532-e018-2dda4dd37ce6">
+                <name>winter wheat; at harvest in 2009; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-000b-0acf-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.110060290814517" mathematicalRelation="0.110060290814517" intermediateExchangeId="603974d0-79cf-0a6d-bb6d-1b7de1afe787">
+                <name>winter wheat; at harvest in 1996; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-000b-0acc-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.200496512590141" mathematicalRelation="0.200496512590141" intermediateExchangeId="370b41b9-2869-8e46-b362-68f171a95313">
+                <name>winter wheat; at harvest in 1997; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-000b-0acd-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.194467431138432" mathematicalRelation="0.194467431138432" intermediateExchangeId="31a9f74e-dc4a-a7fa-24e6-4ce75416994f">
+                <name>winter wheat; at harvest in 2004; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+        </flowData>
+        <modellingAndValidation>
+            <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+                <systemModelName>Allocation, ecoinvent default</systemModelName>
+                <samplingProcedure>As reflected in the referenced intermediate flow datasets, a delete-a-group jackknife is used by the USDA to estimate the ARMS sample means and RSEs, based on a  sample delete-a-group jackknife.   Because of this relatively small sample size, a Students t distribution is used to represent ARMS data probability density functions.  Other representations of uncertainty are described in Cooper, J.S., Kahn, E., Noon, M. (2012). LCA Digital Commons Unit Process Data: field crop production Version 1.  Prepared for the US Department of Agriculture National Agricultural Library.  Retrieved from https://www.lcacommons.gov/discovery/docs/LCA%20Digital%20Commons%20Unit%20Process%20Data%20final%20updated.pdf</samplingProcedure>
+                <extrapolations>Data represent an aggregation of processes applied in Oklahoma from 1996 to 2009. Data development in the referenced intermediate flow datasets is demonstrated by parameterization (exlicitly presents all raw and uncertainty data and all calculations).</extrapolations>
+            </representativeness>
+        </modellingAndValidation>
+        <administrativeInformation>
+            <dataEntryBy personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="Joyce Cooper" personEmail="cooperjs@u.washington.edu"/>
+            <dataGeneratorAndPublication personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="cooperjs@u.washington.edu" personEmail="cooperjs@u.washington.edu" isCopyrightProtected="false"/>
+            <fileAttributes majorRelease="1" minorRelease="1" majorRevision="0" minorRevision="0" defaultLanguage="en" creationTimestamp="2013-08-28T00:00:00-05:00" lastEditTimestamp="2017-11-02T05:45:18.007-05:00" internalSchemaVersion="1.0" fileGenerator="openLCA" fileTimestamp="2019-08-13T19:36:42.367-05:00"/>
+        </administrativeInformation>
+        <ns3:usedUserMasterData>
+            <activityNames id="c9062569-b861-4330-aadc-bebfacdfc8f3">
+                <name>winter wheat; at harvest in multiple production years; at farm; 86%-90% moisture</name>
+            </activityNames>
+            <companies id="b35ea934-b41d-4830-b1aa-c7c678270240" code="UKNWN">
+                <name>Unknown</name>
+                <comment>This is a default entry as we cannot create persons without company information for the EcoEditor.</comment>
+            </companies>
+            <persons id="934566ed-a6d1-07d7-0af7-3256238a26cc" name="Joyce Cooper" address="" telephone="(206) 616-3270" email="cooperjs@u.washington.edu" companyId="b35ea934-b41d-4830-b1aa-c7c678270240">
+                <companyName>UKNWN</companyName>
+            </persons>
+            <intermediateExchanges id="65de67a4-e8d1-ad5a-7dca-b37d105328a6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in multiple production years; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="064a0e45-65c9-f7b2-f9b4-13104ef18d4d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in 2000; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="695aba25-833e-bd0f-359c-305078edbacb" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in 1998; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="73f78060-f621-f532-e018-2dda4dd37ce6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in 2009; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="603974d0-79cf-0a6d-bb6d-1b7de1afe787" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in 1996; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="370b41b9-2869-8e46-b362-68f171a95313" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in 1997; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="31a9f74e-dc4a-a7fa-24e6-4ce75416994f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>winter wheat; at harvest in 2004; at farm; 86%-90% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <activityIndexEntries id="6a2c2ac9-0a9e-aaa6-5046-a64dd4e1e145" activityNameId="c9062569-b861-4330-aadc-bebfacdfc8f3" geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a" startDate="1996-01-02T00:00:00-06:00" endDate="2010-01-01T00:00:00-06:00" systemModelId="8b738ea0-f89e-4627-8679-433616064e82"/>
+        </ns3:usedUserMasterData>
+    </activityDataset>
+</ecoSpold>

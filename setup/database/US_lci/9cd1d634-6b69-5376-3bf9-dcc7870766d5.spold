@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:ns2="http://openlca.org/ecospold2-extensions" xmlns:ns3="http://www.EcoInvent.org/UsedUserMasterData">
+    <activityDataset>
+        <activityDescription>
+            <activity id="9cd1d634-6b69-5376-3bf9-dcc7870766d5" activityNameId="03c93377-fc44-44a4-a352-956cd573fa7c" type="1" specialActivityType="0">
+                <activityName>CUTOFF pesticide, Glyphosate; at point-of-sale; kg AI</activityName>
+                <generalComment>
+                    <text xml:lang="en" index="1">
+This unit process/ gate-to-gate dataset provides a crosswalk between the exchange "CUTOFF pesticide, Glyphosate; at point-of-sale; kg AI" in the USDA LCA Commons to the exchange "glyphosate, at regional storehouse" in the ecoinvent 2.2 database. As a result of the crosswalk, the geographic representativeness is reduced, with the ecoinvent 2.2 data representing operations in Europe as opposed to operation in Missouri (US State).  The impact on the temporal representativeness is not known. Applicable classifications include ISIC 2021, NAIC 325320, UNSPSC 10191500. This dataset was prepared in ILCD format using the UWDFE Lab Excel to ILCD File Generator (beta version, August 2013).
+</text>
+                </generalComment>
+            </activity>
+            <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+                <shortname>GLO</shortname>
+                <comment>
+                    <text xml:lang="en" index="1">Operations in Europe are used as a surrogate for operations in Missouri (US State).</text>
+                </comment>
+            </geography>
+            <technology technologyLevel="0">
+                <comment>
+                    <text xml:lang="en" index="1">This process produces glyphosate, at regional storehouse in Missouri (US State), measured on a per kg basis. Included processes are listed in the meta data for the "glyphosate, at regional storehouse" dataset in the ecoinvent 2.2 database.</text>
+                </comment>
+            </technology>
+            <timePeriod startDate="1996-01-02T00:00:00-06:00" endDate="2010-01-01T00:00:00-06:00" isDataValidForEntirePeriod="true">
+                <comment>
+                    <text xml:lang="en" index="1">Start and end dates match the underlying data obtained from the USDA Agricultural Resource Management Survey (ARMS) for all data contained within the USDA Digital Commons.</text>
+                </comment>
+            </timePeriod>
+            <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+                <name>Business-as-Usual</name>
+            </macroEconomicScenario>
+        </activityDescription>
+        <flowData>
+            <intermediateExchange id="00000000-0019-a5e2-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="087e2b17-34f5-10c0-5ed2-86b8df628281">
+                <name>CUTOFF pesticide, Glyphosate; at point-of-sale; kg AI</name>
+                <unitName>kg</unitName>
+                <outputGroup>0</outputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0019-a5e3-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="a476b4b2-398d-3583-a7e5-f9c6c89d92fd">
+                <name>glyphosate, at regional storehouse</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+        </flowData>
+        <modellingAndValidation>
+            <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+                <systemModelName>Allocation, ecoinvent default</systemModelName>
+                <samplingProcedure>Boundary conditions are described in the meta data for the "glyphosate, at regional storehouse" dataset in the ecoinvent 2.2 database. Uncertainty is not estimated.</samplingProcedure>
+                <extrapolations>No quantitative transformation has been performed.  Flow data quality according to the LCADC convention is provided for all flows.</extrapolations>
+            </representativeness>
+        </modellingAndValidation>
+        <administrativeInformation>
+            <dataEntryBy personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="Joyce Cooper" personEmail="cooperjs@u.washington.edu"/>
+            <dataGeneratorAndPublication personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="cooperjs@u.washington.edu" personEmail="cooperjs@u.washington.edu" isCopyrightProtected="false"/>
+            <fileAttributes majorRelease="1" minorRelease="1" majorRevision="0" minorRevision="0" defaultLanguage="en" creationTimestamp="2013-10-29T00:00:00-05:00" lastEditTimestamp="2017-11-02T05:48:43.820-05:00" internalSchemaVersion="1.0" fileGenerator="openLCA" fileTimestamp="2019-08-13T19:41:04.715-05:00"/>
+        </administrativeInformation>
+        <ns3:usedUserMasterData>
+            <activityNames id="03c93377-fc44-44a4-a352-956cd573fa7c">
+                <name>CUTOFF pesticide, Glyphosate; at point-of-sale; kg AI</name>
+            </activityNames>
+            <companies id="b35ea934-b41d-4830-b1aa-c7c678270240" code="UKNWN">
+                <name>Unknown</name>
+                <comment>This is a default entry as we cannot create persons without company information for the EcoEditor.</comment>
+            </companies>
+            <persons id="934566ed-a6d1-07d7-0af7-3256238a26cc" name="Joyce Cooper" address="" telephone="(206) 616-3270" email="cooperjs@u.washington.edu" companyId="b35ea934-b41d-4830-b1aa-c7c678270240">
+                <companyName>UKNWN</companyName>
+            </persons>
+            <intermediateExchanges id="087e2b17-34f5-10c0-5ed2-86b8df628281" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>CUTOFF pesticide, Glyphosate; at point-of-sale; kg AI</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="a476b4b2-398d-3583-a7e5-f9c6c89d92fd" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>glyphosate, at regional storehouse</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <activityIndexEntries id="9cd1d634-6b69-5376-3bf9-dcc7870766d5" activityNameId="03c93377-fc44-44a4-a352-956cd573fa7c" geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a" startDate="1996-01-02T00:00:00-06:00" endDate="2010-01-01T00:00:00-06:00" systemModelId="8b738ea0-f89e-4627-8679-433616064e82"/>
+        </ns3:usedUserMasterData>
+    </activityDataset>
+</ecoSpold>

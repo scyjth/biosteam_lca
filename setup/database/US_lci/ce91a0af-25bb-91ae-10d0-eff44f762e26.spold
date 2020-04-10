@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:ns2="http://openlca.org/ecospold2-extensions" xmlns:ns3="http://www.EcoInvent.org/UsedUserMasterData">
+    <activityDataset>
+        <activityDescription>
+            <activity id="ce91a0af-25bb-91ae-10d0-eff44f762e26" activityNameId="6833778c-875a-4e27-96b7-bfaac0bf997f" type="1" specialActivityType="0">
+                <activityName>corn grain; at harvest in multiple production years; at farm; 85%-91% moisture</activityName>
+                <generalComment>
+                    <text xml:lang="en" index="1">
+This unit process/ gate-to-gate data set represents the production of 1 kg corn. Coproduction with silage and residue over multiple years is captured in the referenced intermediate flow datasets.  Accounting multiple years of crop production is intended to capture the variability in (e.g., yield, irrigation, and nutrient applications) that comes from differences in weather and operations from year to year.   Applicable classifications include ISIC 0111, NAIC 111150, UNSPSC 50403200; this dataset was prepared in ILCD format using the UWDFE Lab Excel to ILCD File Generator (beta version, August 2013)
+</text>
+                </generalComment>
+            </activity>
+            <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+                <shortname>GLO</shortname>
+                <comment>
+                    <text xml:lang="en" index="1">The unit process is assumed to represent production in Missouri (US State).</text>
+                </comment>
+            </geography>
+            <technology technologyLevel="0">
+                <comment>
+                    <text xml:lang="en" index="1">This process produces corn grain; at harvest in multiple production years; at farm; 85%-91% moisture. The process is assumed to represent production in Missouri (US State). Yields and related inputs and outputs represent 7 years of production and are thus intended to capture variation from year to year. This dataset includes consideration of crop production over 7 years.</text>
+                </comment>
+            </technology>
+            <timePeriod startDate="1996-01-02T00:00:00-06:00" endDate="2006-01-01T00:00:00-06:00" isDataValidForEntirePeriod="true">
+                <comment>
+                    <text xml:lang="en" index="1">Start and end dates match the underlying data obtained from the USDA Agricultural Resource Management Survey (ARMS).</text>
+                </comment>
+            </timePeriod>
+            <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+                <name>Business-as-Usual</name>
+            </macroEconomicScenario>
+        </activityDescription>
+        <flowData>
+            <intermediateExchange id="00000000-0014-ab06-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" mathematicalRelation="1.0" intermediateExchangeId="41ccbab6-d83d-18be-082a-4769f059b2d3">
+                <name>corn grain; at harvest in multiple production years; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <outputGroup>0</outputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab09-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.146958262195258" mathematicalRelation="0.146958262195258" intermediateExchangeId="7a407fd2-0547-386c-a8a6-5884ed0629af">
+                <name>corn grain; at harvest in 2005; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab0d-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.127045544713345" mathematicalRelation="0.127045544713345" intermediateExchangeId="ca96cb53-a7e8-b511-41ac-bfff17971a3b">
+                <name>corn grain; at harvest in 1998; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab08-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.176575476197906" mathematicalRelation="0.176575476197906" intermediateExchangeId="176be346-0c82-781f-07ab-843cd555d892">
+                <name>corn grain; at harvest in 2000; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab0b-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.133286378488738" mathematicalRelation="0.133286378488738" intermediateExchangeId="6c7c8168-198f-3d67-fb18-25258fc66b99">
+                <name>corn grain; at harvest in 1997; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab07-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.110262159595951" mathematicalRelation="0.110262159595951" intermediateExchangeId="ebe3f0e0-f9fa-fa3f-c553-7b83806ebf15">
+                <name>corn grain; at harvest in 1999; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab0c-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.154148594252192" mathematicalRelation="0.154148594252192" intermediateExchangeId="3f5a02d7-e5c4-869c-2f5f-6c36b1982671">
+                <name>corn grain; at harvest in 2001; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+            <intermediateExchange id="00000000-0014-ab0a-0000-000000000000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.151723584556611" mathematicalRelation="0.151723584556611" intermediateExchangeId="1fdd37fc-a2b1-50d7-2122-7adc5758fc86">
+                <name>corn grain; at harvest in 1996; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+                <inputGroup>5</inputGroup>
+            </intermediateExchange>
+        </flowData>
+        <modellingAndValidation>
+            <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+                <systemModelName>Allocation, ecoinvent default</systemModelName>
+                <samplingProcedure>As reflected in the referenced intermediate flow datasets, a delete-a-group jackknife is used by the USDA to estimate the ARMS sample means and RSEs, based on a  sample delete-a-group jackknife.   Because of this relatively small sample size, a Students t distribution is used to represent ARMS data probability density functions.  Other representations of uncertainty are described in Cooper, J.S., Kahn, E., Noon, M. (2012). LCA Digital Commons Unit Process Data: field crop production Version 1.  Prepared for the US Department of Agriculture National Agricultural Library.  Retrieved from https://www.lcacommons.gov/discovery/docs/LCA%20Digital%20Commons%20Unit%20Process%20Data%20final%20updated.pdf</samplingProcedure>
+                <extrapolations>Data represent an aggregation of processes applied in Missouri from 1996 to 2005. Data development in the referenced intermediate flow datasets is demonstrated by parameterization (exlicitly presents all raw and uncertainty data and all calculations).</extrapolations>
+            </representativeness>
+        </modellingAndValidation>
+        <administrativeInformation>
+            <dataEntryBy personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="Joyce Cooper" personEmail="cooperjs@u.washington.edu"/>
+            <dataGeneratorAndPublication personId="934566ed-a6d1-07d7-0af7-3256238a26cc" personName="cooperjs@u.washington.edu" personEmail="cooperjs@u.washington.edu" isCopyrightProtected="false"/>
+            <fileAttributes majorRelease="1" minorRelease="1" majorRevision="0" minorRevision="0" defaultLanguage="en" creationTimestamp="2013-08-28T00:00:00-05:00" lastEditTimestamp="2017-11-02T05:45:21.286-05:00" internalSchemaVersion="1.0" fileGenerator="openLCA" fileTimestamp="2019-08-13T19:38:17.669-05:00"/>
+        </administrativeInformation>
+        <ns3:usedUserMasterData>
+            <activityNames id="6833778c-875a-4e27-96b7-bfaac0bf997f">
+                <name>corn grain; at harvest in multiple production years; at farm; 85%-91% moisture</name>
+            </activityNames>
+            <companies id="b35ea934-b41d-4830-b1aa-c7c678270240" code="UKNWN">
+                <name>Unknown</name>
+                <comment>This is a default entry as we cannot create persons without company information for the EcoEditor.</comment>
+            </companies>
+            <persons id="934566ed-a6d1-07d7-0af7-3256238a26cc" name="Joyce Cooper" address="" telephone="(206) 616-3270" email="cooperjs@u.washington.edu" companyId="b35ea934-b41d-4830-b1aa-c7c678270240">
+                <companyName>UKNWN</companyName>
+            </persons>
+            <intermediateExchanges id="41ccbab6-d83d-18be-082a-4769f059b2d3" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in multiple production years; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="7a407fd2-0547-386c-a8a6-5884ed0629af" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 2005; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="ca96cb53-a7e8-b511-41ac-bfff17971a3b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 1998; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="176be346-0c82-781f-07ab-843cd555d892" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 2000; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="6c7c8168-198f-3d67-fb18-25258fc66b99" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 1997; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="ebe3f0e0-f9fa-fa3f-c553-7b83806ebf15" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 1999; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="3f5a02d7-e5c4-869c-2f5f-6c36b1982671" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 2001; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <intermediateExchanges id="1fdd37fc-a2b1-50d7-2122-7adc5758fc86" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+                <name>corn grain; at harvest in 1996; at farm; 85%-91% moisture</name>
+                <unitName>kg</unitName>
+            </intermediateExchanges>
+            <activityIndexEntries id="ce91a0af-25bb-91ae-10d0-eff44f762e26" activityNameId="6833778c-875a-4e27-96b7-bfaac0bf997f" geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a" startDate="1996-01-02T00:00:00-06:00" endDate="2006-01-01T00:00:00-06:00" systemModelId="8b738ea0-f89e-4627-8679-433616064e82"/>
+        </ns3:usedUserMasterData>
+    </activityDataset>
+</ecoSpold>
