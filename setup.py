@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="biosteam_lca", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="rui shi",
     author_email="cyshi@illinois.edu",
     description='The Biorefinery Simulation Moduels with Techno-Economic Analysis and Life Cycle Assessment',
