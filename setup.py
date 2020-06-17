@@ -31,7 +31,7 @@ setuptools.setup(
 		'Programming Language :: Python :: 3.7',
         'Topic :: Scientific/Engineering',
         'Topic :: Scientific/Engineering :: Environmental',
-        "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
+        # 'License :: OSI Approved :: University of Illinois/NCSA Open Source License'
         ],
     python_requires='>=3.6',
 )
