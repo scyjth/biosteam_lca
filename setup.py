@@ -22,9 +22,16 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/scyjth/biosteam_lca",
     packages=setuptools.find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: University of Illinois/NCSA Open Source License',",
-    ],    
+    # classifiers=[
+    #     "Programming Language :: Python :: 3",
+    #     "License :: OSI Approved :: University of Illinois/NCSA Open Source License',",
+    # ],  
+    classifiers=['Development Status :: 3 - Alpha',
+                 'Environment :: Console',
+                 'License :: OSI Approved :: University of Illinois/NCSA Open Source License',
+                 'Programming Language :: Python :: 3.6',
+				 'Programming Language :: Python :: 3.7',
+                 'Topic :: Scientific/Engineering',
+                 'Topic :: Scientific/Engineering :: Environmental'],
     python_requires='>=3.6',
 )
