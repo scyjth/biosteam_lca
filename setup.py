@@ -26,10 +26,12 @@ setuptools.setup(
     #     "Programming Language :: Python :: 3",
     #     "License :: OSI Approved :: University of Illinois/NCSA Open Source License',",
     # ],  
-    classifiers=["License :: OSI Approved :: University of Illinois/NCSA Open Source License",
-                 "Programming Language :: Python :: 3.6",
-				 'Programming Language :: Python :: 3.7',
-                 'Topic :: Scientific/Engineering',
-                 'Topic :: Scientific/Engineering :: Environmental'],
+    classifiers=[
+        "Programming Language :: Python :: 3.6",
+		'Programming Language :: Python :: 3.7',
+        'Topic :: Scientific/Engineering',
+        'Topic :: Scientific/Engineering :: Environmental',
+        "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
+        ],
     python_requires='>=3.6',
 )
