@@ -11,7 +11,9 @@ Description: # biosteam_lca
         Biosteam.LCA: The Biorefinery Simulation Module with Techno-Economic Analysis and Life Cycle Assessment
         
 Platform: UNKNOWN
-Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: University of Illinois/NCSA Open Source License',
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Environmental
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
