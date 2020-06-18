@@ -4,7 +4,7 @@ The BioSTEAM project is under the University of Illinois/NCSA Open Source Licens
 
 Copyright (c) 2020-2021 Rui Shi and Jeremy Guest. All rights reserved.
 
-Developed by: Rui Shi and BioSTEAM Development Group
+Developed by: Rui Shi and Jeremy Guest
               University of Illinois at Urbana-Champaign
               https://illinois.edu/
 
@@ -21,7 +21,7 @@ furnished to do so, subject to the following conditions:
   conditions and the following disclaimers in the documentation and/or other materials provided
   with the distribution.
 
-* Neither the names of Yoel Cortes-Peña, Jeremy Guest, the University of Illinois, nor the names
+* Neither the names of Rui Shi, Jeremy Guest, the University of Illinois, nor the names
   of its contributors may be used to endorse or promote products derived from this Software
   without specific prior written permission.
 
@@ -36,7 +36,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE 
 Legacy MIT Licence (Versions 0.1-0.9)
 ===================================================================================================
 
-Copyright (c) 2018-2019 Yoel Rene Cortes-Pena <yoelcortes@gmail.com> and Jeremy Guest
+Copyright (c) 2018-2019 Rui Shi <cyshi@illinois.edu> and Jeremy Guest
 <jsguest@illinois.edu>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
