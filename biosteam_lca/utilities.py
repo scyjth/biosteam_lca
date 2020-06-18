@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+85# -*- coding: utf-8 -*-
 """
 Created on Fri Nov  8 11:31:45 2019
 
@@ -19,6 +19,7 @@ def heatutilprop_getter(system, ID, attr, name=None):
     heatutils = [i for i in heatutils if i.ID==ID]
     def get_heatutilprop(): return sum([getattr(i, attr) for i in heatutils])
     return get_heatutilprop
+
 BT=system.BT
 power_utils = ([i._power_utility for i in sugarcane_sys.units if (i._power_utility and i is not BT)])
 excess_electricity = [0]
@@ -26,7 +27,7 @@ def get_consumed_electricity():
     electricity_generated = -BT._power_utility.rate
     consumed_electricity = sum([i.rate for i in power_utils])
     excess_electricity[0] = electricity_generated - consumed_electricity
-    return consumed_electricity
+    return consumed_electricity   
 
 def sys_utility(sys_name):
     get_excess_electricity = lambda: excess_electricity[0]

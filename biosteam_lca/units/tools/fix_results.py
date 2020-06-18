@@ -8,7 +8,7 @@ from biosteam import Unit
 results = Unit.results
 def results_wt_LCA(self):
     try:
-        self.baseLCA()
+        self.multiLCA()
     except:
         pass
     return results(self)

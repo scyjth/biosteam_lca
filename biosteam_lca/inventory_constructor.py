@@ -133,6 +133,8 @@ class InventoryConstructor(BuitInInventory):
     def print_lcis(self):
         for lci in self.lcis:
             print ('-->', lci.get('parameters'))
+    
+#INC = InventoryConstructor()
 
 class MMC_InventoryConstructor(InventoryConstructor):
     #lcia_method = np.array[

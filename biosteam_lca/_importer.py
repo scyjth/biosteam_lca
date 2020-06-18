@@ -11,7 +11,6 @@ import requests
 from zipfile import ZipFile
 import eidl
 import functools
-import collections
 from eight import *
 try:
     from collections.abc import Mapping

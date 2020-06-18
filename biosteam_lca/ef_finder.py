@@ -85,3 +85,5 @@ class BuiltInEmissionFactor(EmisssionFactorFinder):
 
     def __str__(self):
         return "{}".format(self.match_name)
+
+BuitInEF=BuiltInEmissionFactor

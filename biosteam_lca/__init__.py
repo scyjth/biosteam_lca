@@ -16,7 +16,7 @@ try:
     from .setup import * # databases, methods, Database, SetUp
 except ImportError:
     None
-from .method_finder import Method, Methods
+# from .method_finder import Method, Methods
 from .activity_builder import ActivityBuilder
 from .inventory_constructor import InventoryConstructor
 from .monte_carlo import MultiMonteCarlo
