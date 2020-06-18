@@ -30,7 +30,7 @@ def get_activity(key):
 #        raise UnknownObject("Key {} cannot be understood as an activity"
 #                            " or `(database, code)` tuple.")
 
-class MethodsConstructor():
+class MethodFinder():
     """Search and analyze impact assessment methods.
     **Initialization parameters**
             * *methods_name*: List of candidate impact assessment methods
@@ -38,7 +38,8 @@ class MethodsConstructor():
     
     def __init__(self, methods_name = None):
         self.methods_namee = methods_name
-
+        
+    @property
     def search (self, exclude = None, length =None):
         """   
          A method to lookup life cycle impact assessment method (LCIA) by method name or impact category, such as:'IPCC 2007', or 'ReCiPe Endpoint (H,A)'
@@ -151,7 +152,16 @@ class MethodsConstructor():
 #                row += 1
 #        workbook.save(filename="ncf2.xlsx")
         return negtive_cf_dict
-        
+ 
+    # def description(self, method_name):
+    #     self.method_name=method_name
+    #     """get brieft description of the impact assessment method"""
+    #     return self.method_name.metadata.get('description')
+    
+    # def unit(self):
+    #     """get unit of the impact assessment score"""
+    #     return self.metadata.get('unit')
+       
     def random(self):
         return methods.random()
 
@@ -172,7 +182,7 @@ class Method (ImpactAssessmentDataStore):
         self.name = name
 
     def _write(self, data, process=True):
-        """From bw2; Serialize intermediate data to disk. Sets the metadata key ``num_cfs`` automatically."""
+        """Serialize intermediate data to disk. Sets the metadata key ``num_cfs`` automatically.From bw2; """
         self.metadata[u"num_cfs"] = len(data)
         self._metadata.flush()
         super(Method, self).write(data)
@@ -187,11 +197,11 @@ class Method (ImpactAssessmentDataStore):
                 print (err)
             CFs.append((activity, cf))
         return CFs
-            
+    @property       
     def description(self):
         """get brieft description of the impact assessment method"""
         return self.metadata.get('description')
-    
+    @property    
     def unit(self):
         """get unit of the impact assessment score"""
         return self.metadata.get('unit')
@@ -203,8 +213,6 @@ class Method (ImpactAssessmentDataStore):
         
     def __str__(self):
         return "Impact assessment %s: %s in BioSteam.LCA" % (self.__class__.__name__, self.name)             
-      
-Methods = MethodsConstructor
 
 #CANDIDATES = [
 # (u'CML 2001', u'acidification potential', u'average European'),

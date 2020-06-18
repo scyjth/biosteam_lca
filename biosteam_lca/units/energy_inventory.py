@@ -10,7 +10,7 @@ from biosteam_lca.multilca import MultiLCA
 #from decimal import Decimal
 from biosteam_lca.inventory_constructor import InventoryConstructor 
 import pandas as pd
-INC = InventoryConstructor()
+#INC = InventoryConstructor()
 
 def demand_per_hr(heat_utilities, power_utility):
     """Return a dictionary of power utilities and heat utilities for each unit process."""
@@ -46,6 +46,7 @@ def amount(heat_utilities, power_utility):
     return cooling, heating, power
 
 def _unit_lci_as_dict(heat_utilities, power_utility):
+    INC=InventoryConstructor()
     inventory = {}  
     [cooling_p, heating_p, power_p] = [INC.hx_cooling, INC.hx_heating, INC.electricity]
     cooling, heating, power = amount(heat_utilities, power_utility)
@@ -55,6 +56,7 @@ def _unit_lci_as_dict(heat_utilities, power_utility):
     return inventory
 
 def unit_lci (heat_utilities, power_utility):   
+    INC=InventoryConstructor()
     inventory = {}
     activity_lst=[cooling_p, heating_p, power_p] = [INC.hx_cooling, INC.hx_heating, INC.electricity]
     cooling, heating, power = amount(heat_utilities, power_utility)
@@ -70,13 +72,27 @@ def unit_lci (heat_utilities, power_utility):
     pd.options.display.max_colwidth = 100
     return df
 
+ia_methods =[
+        ('TRACI', 'environmental impact', 'acidification'),
+        ('TRACI', 'environmental impact', 'ecotoxicity'),
+        ('TRACI', 'environmental impact', 'eutrophication'),
+        ('TRACI', 'environmental impact', 'global warming'),
+        ('TRACI', 'environmental impact', 'ozone depletion'),
+        ('TRACI', 'environmental impact', 'photochemical oxidation'),
+        ('TRACI', 'human health', 'carcinogenics'),
+        ('TRACI', 'human health', 'non-carcinogenics'),
+        ('TRACI', 'human health', 'respiratory effects, average')
+        ]
+    
 def unit_lca(heat_utilities, 
-             power_utility, 
-             method=[('TRACI', 'environmental impact', 'global warming')]):
+             power_utility, method=ia_methods):
+ #            method=[('TRACI', 'environmental impact', 'global warming')]):
     inventory = _unit_lci_as_dict(heat_utilities, power_utility)
     MultiLCA(inventory).set_ia_methods (method)
-    results = MultiLCA(inventory).run()
-    return results
+    results = MultiLCA(inventory).scores()
+    unclassified= [sum(results[i]) for i in results.keys()]
+    unclassified_sum=dict(zip(results.keys(),unclassified))
+    return unclassified_sum
 
 #class EnergyInventory:
 #

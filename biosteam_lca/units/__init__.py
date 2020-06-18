@@ -10,8 +10,8 @@ from .units_e import *
 
 # %% All units
 
-__all__ = ['LLECentrifuge', 'Flash', 'ConveyingBelt', 'CrushingMill, Shredder', 'Clarifier', 
-           'RotaryVacuumFilter', 'LiquidsSplitCentrifuge', 'SolidsCentrifuge', 'VentScrubber', 
-           'BinaryDistillation', 'SplitFlash', 'MultiEffectEvaporator','HXutility','Pump', 
-           'Transesterification', 'VibratingScreen', 'EnzymeTreatment', 'StorageTank', 
-           'MixTank', 'MagneticSeparator', 'MolecularSieve', 'Fermentation', ]
+__all__ = ['LLECentrifuge', 'Flash', 'ConveyingBelt', 'CrushingMill', 'Shredder', 'Clarifier', 
+            'RotaryVacuumFilter', 'LiquidsSplitCentrifuge', 'SolidsCentrifuge', 'VentScrubber', 
+            'BinaryDistillation', 'SplitFlash', 'MultiEffectEvaporator','HXutility','Pump', 
+            'Transesterification', 'VibratingScreen', 'EnzymeTreatment', 'StorageTank', 
+            'MixTank', 'MagneticSeparator', 'MolecularSieve', 'Fermentation', ]

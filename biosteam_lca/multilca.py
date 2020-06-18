@@ -64,10 +64,6 @@ class MultiLCA:
     @classmethod
     def set_ia_methods(cls, set_methods):
         """set user defined impact assessment method/methods"""
-        try:
-            assert isinstance(set_methods, list)
-        except:
-            raise ("method must be a valid method lists")
         cls.ia_methods = set_methods
         return cls.ia_methods
     
@@ -84,6 +80,8 @@ class MultiLCA:
             numpy array with multiple impact results.
         """
         lcia_methods = self.ia_methods
+        if not isinstance(lcia_methods , list):
+            raise ("method must be a valid method lists")
         start_time = time.clock()
         inventory_inputs = self.inventory_inputs
         flows = list(self.inventory_inputs.keys())
@@ -127,9 +125,14 @@ class MultiLCA:
         headers = ['Impact Category', 'Impact Score']
         if table == True:
             print (tabulate(multi_score, headers=headers, tablefmt='grid'))   
-        return (output, lcia_methods)
-#        #return multi_score
-#        return results_dic
+#         return (output, lcia_methods)
+# #        #return multi_score
+        # for row, flow in enumerate(flows):
+        #     for col, method in enumerate(lcia_methods):
+        #         self.results = np.zeros((len(flows), len(lcia_methods)))
+        #         self.results[row, col] = results_dic [method]
+        
+        return results_dic
      
     def multi_process_calc(self, activities, single_impact):
         """ 
