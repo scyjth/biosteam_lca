@@ -16,9 +16,9 @@ try:
     from .setup import * # databases, methods, Database, SetUp
 except ImportError:
     None
-from .method_finder import Method, Methods
+from .method_finder import Method, MethodFinder
 from .activity_builder import ActivityBuilder
-from .inventory_constructor import InventoryConstructor
+from .inventory_constructor import InventoryConstructor, MMC_InventoryConstructor
 from .monte_carlo import MultiMonteCarlo
 from .multilca import MultiLCA
 #        
@@ -30,7 +30,6 @@ __all__ = [
     'static_calc',
     'SetUp',
     'Method',
-    'Methods'
     'importers',
     'Activity',
     'SetUp',
@@ -39,12 +38,14 @@ __all__ = [
     'config',
     'UnicodeReader',
     'SerializedLCAReport',
+    'InventoryConstructor',
     'peewee',
-    'config'
-    'InventoryConstructor', 
+    'config',
     'ActivityBuilder',
     'MultiMonteCarlo', 
-    'MultiLCA'
+    'MultiLCA',
+    'MethodFinder',
+    'MMC_InventoryConstructor'
     ]
   
 ### %% Import base utils

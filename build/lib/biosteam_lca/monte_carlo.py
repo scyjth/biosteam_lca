@@ -74,13 +74,14 @@ class MultiMonteCarlo(object):
         self.methods_array = methods_array
         #self.units = list(map(lambda x: Method(x).unit(), self.methods_array))
     
-    def uncertainty(self, iteration=1000,plot=True):
+    def uncertainty(self, iteration=100,plot=True):
         uncertainty_array={}
         for m in self.methods_array:
             flow_mc = bw2.MonteCarloLCA({self.flow:1}, method=m)
             scores = [next(flow_mc) for _ in pyprind.prog_bar(range(iteration))]
             if plot==True:
                 print (m)
+                # plt.plot()
                 plt.figure(self.methods_array.index(m))
                 plt.hist(np.array(scores), histtype='step', bins=100, density=True)
                 #plt.xlabel("{}".format(Method(m).metadata['unit']))
@@ -88,6 +89,7 @@ class MultiMonteCarlo(object):
                 plt.legend()
                 plt.title("Monte Carlo results\n{}\nUnit processes".format(m))    
             uncertainty_array[m] = np.array(scores)
+            plt.show()
         return uncertainty_array
     
     def to_excel(self, dict_name, file_name = "mc_lci_workbook.xlsx"):
@@ -110,15 +112,15 @@ class MultiMonteCarlo(object):
         return "%s" % (self.__class__.__name__)           
 
 
-LCA_calc_mc = {} #store lca data
-def monte_carlo (flow, method, amount, iterations=500, cpus = None, uuid_=None):
-    if cpus == None:
-        cpus = cpu_count()
-    mc_data = SerializedLCAReport({flow: amount}, method, iterations, cpus).get_monte_carlo()
-    if uuid_:
-        mc_data['iterations'] = iterations
-        LCA_calc_mc.update({uuid_: mc_data})
-    return mc_data
+# LCA_calc_mc = {} #store lca data
+# def monte_carlo (flow, method, amount, iterations=500, cpus = None, uuid_=None):
+#     if cpus == None:
+#         cpus = cpu_count()
+#     mc_data = SerializedLCAReport({flow: amount}, method, iterations, cpus).get_monte_carlo()
+#     if uuid_:
+#         mc_data['iterations'] = iterations
+#         LCA_calc_mc.update({uuid_: mc_data})
+#     return mc_data
 
 
 #test 

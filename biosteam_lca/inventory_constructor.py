@@ -10,7 +10,7 @@ from pint import UnitRegistry
 import pandas as pd
 import numpy as np
 from biosteam_lca.multilca import MultiLCA
-from biosteam_lca.ef_finder import BuitInEF
+# from biosteam_lca.ef_finder import BuitInEF
 from biosteam_lca.monte_carlo import MultiMonteCarlo as MMC
 ureg = UnitRegistry()
 

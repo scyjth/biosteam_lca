@@ -13,9 +13,12 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="biosteam_lca", # Replace with your own username
-    version="0.0.2",
+    version="0.0.4",
     author="rui shi",
     author_email="cyshi@illinois.edu",
+    install_requires=['Brightway2>=2.3', 'biorefineries>=2.14.5',
+                  'biosteam>=2.19.4',
+                  'tabulate >=0.8.7', 'requests>=2.22.0'],
     description='The Biorefinery Simulation Moduels with Techno-Economic Analysis and Life Cycle Assessment',
     #"An Integrated Modeling Framework for Agile Life Cycle Assessment of Biorefineries",
     long_description=long_description,
