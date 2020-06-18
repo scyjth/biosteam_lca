@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="biosteam_lca", # Replace with your own username
-    version="0.0.4",
+    version="0.0.5",
     author="rui shi",
     author_email="cyshi@illinois.edu",
     install_requires=['Brightway2>=2.3', 'biorefineries>=2.14.5',
