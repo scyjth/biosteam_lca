@@ -33,10 +33,17 @@ c_path=os.path.abspath(os.path.dirname(__file__))
 #%% 
 
 class DatabaseImporter(object):
-    """A quick and convenient way to import life cycle inventory databases, including commercial and public databases. This object provides an convinenet way to downloading, mapping and importing to brightway2 SQLite backend.
-    **Initialization parameter**
-        
-            ** dirpath:** [str] Path of the database directory
+    """A quick and convenient way to import life cycle inventory databases, including 
+    commercial and public databases. This object provides an convenient way to 
+    download, map and import the SQLite backend to brightway2.
+
+    Attributes
+    ----------
+    c_path: string
+        The absolute path to the current working directory. 
+    dirpath: string
+        The abolute path to the database directory.
+
     """  
 #    c_path=os.path.abspath(os.path.dirname(__file__))
     
@@ -49,55 +56,88 @@ class DatabaseImporter(object):
                 os.makedirs(self.dirpath)
                 
     def ecoinvent_db(self,download_path=None, store_download=True, **Login_credentials):
-        """A method to log in to ecoinvent user account, downlad and import ecoinvent database to current project based on brightway framework. 
+        """A method to log in to ecoinvent user account, downlad and import ecoinvent 
+        database to current project based on brightway framework. 
         
-        Ecoinvent is one of the most comprehensive LCI databases based in Europe, with over 14,700 LCI datasets in many areas 
-        
-        such as energy supply, agriculture, transport, biofuels and biomaterials, bulk and specialty chemicals, construction 
-        
-        materials, wood, and waste treatment. Current latest version is ecoinvent 3.5, which builds upon all previous versions of the database.
-        
-        LCI  contain only inputs and outputs to and from biosphere and one output to technosphere (the reference product).
-        
-        **Note**
-        
-            Ecoinvent is a commerial databse. Login credential is required before acessing ecoinvent database through Biosteam_lca. 
+        Note
+        ----
+            
+            Ecoinvent is a commerial databse. Login credential is required before 
+            acessing ecoinvent database through Biosteam_lca. 
         
        
-        **Login_credentials**
+        Parameters
+        ----------
+        **Login_credentials : dict
         
-            ** username:** [str] Ecoinvent username
+            * username : str 
+                Ecoinvent username
                 
-            ** password:** [str] Ecoivnent password    
+            * password : str
+                Ecoivnent password    
                 
-            ** version:** [str] Avaiable database version
+            * version : str 
+                Avaiable database version
                 
-            ** system_model:** [str] System models. The ecoinvent version 3 database offers three system models to choose from:
+            * system_model : str
+                System models. The ecoinvent version 3 database offers three system 
+                models to choose from:
                     
-                    * Cut-Off: The system model Allocation, cut-off by classification. For users new to 
-                    LCI databases, ecoinvent recommends using the cut-off system model when starting to 
-                    work with ecoinvent version 3. \n
-                    https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/system-models-in-ecoinvent-3.html
+                    * Cut-Off: The system model Allocation, cut-off by classification. 
+                    For users new to LCI databases, ecoinvent recommends using the 
+                    cut-off system model when starting to work with ecoinvent version 3.
+                    https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/
+                    system-models-in-ecoinvent-3.html
                     
                     * APOS: The system model Allocation at the point of substitution
                     
                     * Consequential: The system model substitution, consequential
-                
-       
-        **kwargs**     
+
+        download_path : str, optional
+
+            Default is to download to temporary directory, '.7z file' will be removed 
+            after succefful import ecoinvent database. Otherwise user can specify 
+            specific download path.
+
+        store_download : bool, optional
+
+            Default is to store the the '.7z file'. Otherwise 'False' if no 
+            download_path is provided. 
+
+        Returns
+        -------
         
-            **download_path** = None: Default is download to temporary directory, '.7z file' will be removed after succeffully import ecoinvent database. Otherwise user can specify specific download path.
-           
-            **store_download** = True: Default is store the the '.7z file'. Otherwise 'False' if no download_path is provided
-    
-            
-        **References**
+        db_name : str
+
+            The name of the ecoinvent_db.
+
+        Notes
+        -----
         
-            [1]Wernet, G., Bauer, C., Steubing, B., Reinhard, J., Moreno-Ruiz, E., and Weidema, B., 2016. The ecoinvent database version 3 (part I): overview and methodology. The International Journal of Life Cycle Assessment, [online] 21(9), pp.1218–1230.
+        Ecoinvent is one of the most comprehensive LCI databases based in Europe, 
+        with over 14,700 LCI datasets in many areas, such as energy supply, agriculture, 
+        transport, biofuels and biomaterials, bulk and specialty chemicals, 
+        construction materials, wood, and waste treatment. Current latest version is 
+        ecoinvent 3.5, which builds upon all previous versions of the database.
         
-            [2]Ecoinvent, Allocation cut-off by classification, accessed [Aug 12 2019], available at https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html
+        LCI  contain only inputs and outputs to and from biosphere and one output to 
+        technosphere (the reference product).
         
-            [3]Ecoinvent, What is the structure of the data that ecoinvent offers?, accessed [Aug 13 2019], avaiable at https://www.ecoinvent.org/support/faqs/first-time-users/what-is-the-structure-of-the-data-that-ecoinvent-offers.html
+        References
+        ----------
+
+        [1]Wernet, G., Bauer, C., Steubing, B., Reinhard, J., Moreno-Ruiz, E., 
+        and Weidema, B., 2016. The ecoinvent database version 3 (part I): overview 
+        and methodology. The International Journal of Life Cycle Assessment, 
+        [online] 21(9), pp.1218–1230.
+        
+        [2]Ecoinvent, Allocation cut-off by classification, accessed [Aug 12 2019], 
+        available at https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/
+        cut-off-system-model/allocation-cut-off-by-classification.html
+        
+        [3]Ecoinvent, What is the structure of the data that ecoinvent offers?, 
+        accessed [Aug 13 2019], avaiable at https://www.ecoinvent.org/support/faqs/
+        first-time-users/what-is-the-structure-of-the-data-that-ecoinvent-offers.html
         
         """
         fp = appdirs.user_data_dir(
@@ -146,21 +186,40 @@ class DatabaseImporter(object):
     
     def forwast_db(self, url="http://lca-net.com/wp-content/uploads/forwast.bw2package.zip"):  
         
-        """ Download and install forwast database. 
+        """A method for downloading and installing `forwast database`. 
         
-        FORWAST is a open source database that developed and managed by <2.-0 LCA consultants>, under the " EU’s\ 
+        Parameters
+        ----------
+
+        url : string, optional
+            The url from which to download the forwast database. Default is to download
+            from `http://lca-net.com/wp-content/uploads/forwast.bw2package.zip`.
+
+        Returns
+        -------
+
+        sp : obj
+
+            The initialized database.
+
+        Notes
+        -----
+
+        FORWAST is a open source database that developed and managed by 
+        <2.-0 LCA consultants>, under the " EU’s Sixth Framework Programme – 
+        European Union". Forwast database includes "material stocks, waste 
+        quantities and environmental indicators based on detailed 
+        environmentally extended economic and physical input-output 
+        matrices (IO-tables) based on the national accounting systems and 
+        other statistics." The database is also available in SimaPro 
+        under "EU and DK Input Output library".
         
-        Sixth Framework Programme – European Union". Forwast database includes "material stocks, waste quantities\ 
-        
-        and environmental indicators based on detailed environmentally extended economic and physical input-output\ 
-        
-        matrices (IO-tables) based on the national accounting systems and other statistics." The database is also\ 
-       
-        available in SimaPro under "EU and DK Input Output library".
-        
-        **References**
-        
-            [1] Schmidt, J. H., Weidema, B. P., & Suh, S. (2010). EU-FORWAST project. Deliverable no. 6.4. Documentation of the final model used for the scenario analyses. In Tech. Rep..  
+        Referenences
+        ------------
+
+        [1] Schmidt, J. H., Weidema, B. P., & Suh, S. (2010). EU-FORWAST project. 
+        Deliverable no. 6.4. Documentation of the final model used for the 
+        scenario analyses. In Tech. Rep..  
         
         """
         #exists = os.path.isfile('forwast.package.zip')
@@ -195,11 +254,32 @@ class DatabaseImporter(object):
         return sp
     
                       
-    def user_customized_db(self):
+    def user_customized_db(self, customized_db_xlsx):
         """ 
-        Import user customized lci databases and datasets. Database name will be matched with the 'name' field in the excel file.
+        A method for importing user customized lci databases and datasets from an 
+        Excel file.
+
+        Parameters
+        ----------
+
+        customized_db_xlsx : str
+
+            The filename of a .xlsx file in the local directory. For example:
+            `example_user_customized_database.xlsx`
+
+        Returns
+        -------
+
+        sp : obj
+
+            The initialized database.
+
+        Notes
+        -----
+
+        Database name will be matched with the 'name' field in the excel file.
         """
-        filename = 'example_user_customized_database.xlsx'
+        filename = customized_db_xlsx
         file_path = os.path.join(self.dirpath,filename) 
         assert os.path.exists(file_path), "File Not Found"  
         #customized datasets needs to be in excel format, follow example in database folder. Use ExcelImporter to import and write datasets and exchanges
@@ -219,14 +299,33 @@ class DatabaseImporter(object):
                    
     def uslci_db(self):
         """ 
-        Orignal repository were downloaded from the U.S. Federal LCA Commons|Ag data Commons platform. 
-        Note Biosteam_lca leverages ecospold2 importer and excel importer. For converting from json format to ecospold format, the Openlca Data Converter were used. Pre-processed database are saved under biosteam_lca-database ddirectory.
+        A method for initializing the `us_lci` database.
+        Orignal repository was downloaded from the U.S. Federal LCA Commons|Ag data 
+        Commons platform. 
+
+        Returns
+        -------
+
+        sp : obj
+
+            The initialized database.
         
-        **References**
+        Notes
+        -----
+
+        Biosteam_lca leverages ecospold2 importer and excel importer. The Openlca Data 
+        Converter is used for converting from json format to ecospold format. 
+        Pre-processed databases are saved under biosteam_lca-database directory.
         
-            [1] USDA National Agricultural Library. (2015). LCA Commons. Ag Data Commons. https://doi.org/10.15482/USDA.ADC/1173236. Accessed 2020-03-23.
+        References
+        ----------
+        
+        [1] USDA National Agricultural Library. (2015). LCA Commons. Ag Data Commons. 
+        https://doi.org/10.15482/USDA.ADC/1173236. Accessed 2020-03-23.
             
-            [2] Michael Srocka, Juliane Franze, Andreas Ciroth, January 2010. Documentation openLCA format converter V2. Data Conversion from EcoSpold02 to ILCD. GreenDeltaTC GmbH Berlin 
+        [2] Michael Srocka, Juliane Franze, Andreas Ciroth, January 2010. 
+        Documentation openLCA format converter V2. Data Conversion from EcoSpold02 
+        to ILCD. GreenDeltaTC GmbH Berlin 
         """
         db_name = 'us_lci'
         lci_import = importers.SingleOutputEcospold2Importer(os.path.join(self.dirpath,'US_lci'), db_name)
@@ -248,12 +347,31 @@ class DatabaseImporter(object):
     
     @staticmethod
     def inspect(sp, db_name):
-        """Check if there's any unlinked exchange, if so, user's decision to if or not continue writing to SQLite3 backend.
+        """A static method to check for any unlinked exchange in a given database. 
+        If found, it will be the user's decision to if or not continue writing to 
+        SQLite3 backend.
+
+        Parameters
+        ----------
+
+        sp : obj
+
+            The initialized database.
         
-        **returns:** 
-            **datasets:** <class 'int'> total lci datasets extracted 
-            **exchanges:** <class 'int'> total exchanges
-            **unlinked:** <class 'int'> unlinked exchanges
+        Returns
+        -------
+
+        datasets: int 
+
+            The total number of lci datasets extracted.
+        
+        exchanges : int
+
+            The total number of exchanges.
+
+        unlinked: int
+
+             The total number of unlinked exchanges.
         """
         
         datasets, exchanges, unlinked = sp.statistics(print_stats=False)
@@ -282,10 +400,10 @@ class DatabaseImporter(object):
                 raise Warning ('Stopped writing to backend SQLite3 database')      
         return datasets, exchanges
 
+
 Importer = DatabaseImporter
-
-
 check_path=os.getcwd()
+
 def listDir(dir):
     fileNames=os.listdir(dir)
     for fileName in fileNames:
