@@ -36,14 +36,24 @@ def static_calc (flow, amount, methods, factorize=False):
 
 class MultiLCA:
     """
-    Conducting life cycle assessment calculations with multiple inventory inputs profiles, life cycle impact assessment methods, 
-    and variable amounts inherited from each unit. Pre-selection of database is required, if not specify, default database would be chosen. 
+    A means of conducting life cycle assessment calculations with multiple inventory 
+    inputs profiles, life cycle impact assessment methods, and variable amounts 
+    inherited from each unit. Pre-selection of database is required, if not specify, 
+    default database would be chosen. 
    
-    ***Initilization parameter:
-        **inventory_inputs:** [dict] Create a dictionary with selected inventory profile and amount for process inputs. 
+    Attributes
+    ----------
+
+    inventory_inputs: dict 
+
+        Inventory profile and amount for process inputs. 
+
+    Note
+    -----
     
-    Call ``.run ()`` to generate results. Results return a numpy array with multiple impact results, calculate up to 800+ 
-    impact categories for each unit simultaneously. Call``.timer ()`` to see simulation time.
+    Call `.run ()` to generate results. Results return a numpy array with multiple 
+    impact results, calculate up to 800+ impact categories for each unit simultaneously. 
+    Call``.timer ()`` to see simulation time.
 
     """
     ia_methods =[
@@ -63,21 +73,56 @@ class MultiLCA:
     
     @classmethod
     def set_ia_methods(cls, set_methods):
-        """set user defined impact assessment method/methods"""
+        """A @classmethod to set user defined impact assessment method(s).
+
+        Parameters
+        ----------
+
+        set_methods : 
+
+            The methods to be set to `ia_methods`.
+
+        Returns
+        -------
+
+        cls.ia_methods : dict
+
+            The newly set `ia_methods`. 
+        """
         cls.ia_methods = set_methods
         return cls.ia_methods
     
-    def scores(self, timer=False, table = False):
-        
-        """
-        Run multi impact LCA calculation by taking inputs, methods and amounts of each input. 
-        User can choose one impact category or multiple. If doesn't specify, IPCC glowbal warming potencial would be the default method.
-        
-        **Kwargs:
-            * *method* (tuple, optional): LCIA Method tuple, e.g. ``('TRACI', 'human health', 'carcinogenics')``.
+    def scores(self, timer=False, table=False, method=None):
+        """A method to run multi impact LCA calculation by taking inputs, methods and 
+        amounts of each input. 
 
-        **Returns:
-            numpy array with multiple impact results.
+        Parameters
+        ----------
+
+        timer : boolean, optional
+
+            Set to `True` to print() time taken to process. Default is `False`. 
+
+        table : boolean, optional
+
+            Set to `True` to print tabulated results.
+
+        method : tuple, optional
+
+            LCIA Method; e.g. `('TRACI', 'human health', 'carcinogenics')`
+
+        Returns
+        -------
+
+        results_dic : dict
+
+            A dict containing numpy arrays with multiple impact results.
+
+        Note
+        ----
+
+        User can choose one or more impact categories. If 
+        not specified, `IPCC glowbal warming potencial` is the default method.
         """
         lcia_methods = self.ia_methods
         if not isinstance(lcia_methods , list):
@@ -135,8 +180,25 @@ class MultiLCA:
         return results_dic
      
     def multi_process_calc(self, activities, single_impact):
-        """ 
-        Calculate the impact score of multiple process using selected lcia method. Returns a numpy array of impact scores for each input. 
+        """A method to calculate the impact score of multiple process using selected 
+        lcia method. 
+
+        Parameters
+        ----------
+
+        activities : list
+
+            The activities to apply.
+
+        single_impact :
+
+            The single impact to consider.
+        
+        Returns
+        -------
+        multi_process_calc_result : tuple
+
+            A tuple containing a numpy array of impact scores for each input. 
         """
         amounts = list(self.inventory_inputs.values())
         output = np.zeros((len(activities),))                              # Load method data
@@ -148,11 +210,37 @@ class MultiLCA:
                     raise ValueError("Invalid dictionary")
             score = static_calc (flow, amount, single_impact)
             output[index] = score
-        return (single_impact, output)  
+        multi_process_calc_result = (single_impact, output)
+        return multi_process_calc_result
     
     def multi_process(self, single_impact):
-        """ 
-        Calculate the impact score of multiple process using selected lcia method. Returns a numpy array of impact scores for each input. 
+        """A method to calculate the impact score of multiple process using selected 
+        lcia method. 
+
+        Parameters
+        ----------
+
+        simgle_impact :
+
+            The single impact to consider.
+
+        Returns
+        ------- 
+        
+        multi_process_result : tuple
+
+            A tuple containing numpy array of impact scores for each input. 
+
+        Raises
+        ------
+
+        ValueError
+
+            If flow is not a dict.
+
+        ValueError
+
+            If flow dict is empty.
         """
         flows = list(self.inventory_inputs.keys())
         amounts = list(self.inventory_inputs.values())
@@ -165,13 +253,48 @@ class MultiLCA:
                     raise ValueError("Invalid dictionary")
             score = static_calc (flow, amount, single_impact)
             output[index] = score
-        return (single_impact, output)  
+        multi_process_result = (single_impact, output)
+        return multi_process_result
     
     @staticmethod
-    def multi_impact (flow, amount, methods, factorize=False,table = False):
-        """
-        Calculate the life cycle impact assessment results for selected processes and multiple method. Returns multiple LCA scores. 
-        LCIAmethods is a list include All candidate LCIA methods that needs to be tested. 
+    def multi_impact (flow, amount, methods, factorize=False,table=False):
+        """A method to calculate the life cycle impact assessment results for selected 
+        processes and multiple methods. 
+        
+        Parameters
+        ----------
+
+        flow : dict
+
+            The flow to apply.
+
+        amount :
+
+            
+
+        methods :
+
+            The methods to apply.
+
+        factorize : bool, optional
+
+            Factorize results. Default is `False`.
+
+        table : bool, optional
+
+            Return results in tabular form. Default is `False`.
+
+        Returns
+        -------
+        
+        multi_impact_result : tuple
+
+            The flow, and its associated scoresum.
+
+        Notes
+        -----
+
+        LCIAmethods is an inclusive list of all candidate LCIA methods that need to be tested. 
         """
         methodsum =[]
         scoresum = []
@@ -184,10 +307,20 @@ class MultiLCA:
         if table == True:
             print (tabulate(scoresum, headers=headers, tablefmt='grid'))            
         else:
-            return (flow,scoresum)
+            multi_impact_result = (flow,scoresum)
+            return multi_impact_result
             
     def timer (self):
-        """Record the time of running analysis"""
+        """A method to record the time of running analysis
+
+        Returns
+        -------
+
+        end_time : float
+
+            The difference between the start time and the end time of the process 
+            as expressed in seconds.
+        """
         start_time = time.time()
         self.multi_calc(self.lcia_methods)
         end_time = time.time() - start_time
@@ -203,7 +336,31 @@ class MultiLCA:
 # 'market for electricity, medium voltage' (kilowatt hour, US-FRCC, None): 11.609127275005434}
 
 def export_matrix_to_excel(row_names, col_names, matrix, filepath='export.xlsx', sheetname='Export'):
-    """Export inventory input matrix to excel"""
+    """A method to export inventory input matrix to excel.
+
+    Parameters
+    ----------
+
+    row_names : list
+
+        A list of the row names to write to the Excel sheet.
+
+    col_names : list
+
+        The column names to write to the Excel sheet.
+
+    matrix :
+
+        The matrix from which to write.
+
+    filepath : str, optional
+
+        The name of the file to write to. Default value is `export.xlsx`.
+
+    sheetname : str, optional
+
+        The name of the Excel sheet. Default value is `Export`.
+    """
     workbook = Workbook(filepath)
     ws = workbook.add_worksheet(sheetname)
     # formatting border

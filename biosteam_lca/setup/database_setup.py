@@ -21,12 +21,20 @@ except:
         
 #%%
 class SetUpDatabase():
-    """Setting up lci databases to brightway backend. Inventory data can be exported to excel. This class enables importing, managing,
+    """A means of setting up lci databases with brightway backend. Inventory data can 
+    be exported to excel. This class enables importing, managing,
     and manipulating the databases and activities and exchanges in the database.
     
-    **initialization parameter**
+    Attributes
+    ----------
         
-            ** database_name:** [str] Name of the lci databases or datasets 
+    database_name : str 
+
+        Name of the lci databases or datasets 
+
+    db : obj
+
+        An instance of the database to be set up. 
     """
     
     download_path=None
@@ -70,42 +78,114 @@ class SetUpDatabase():
         return self.__class__.__name__ 
     
     def check_dir(dirpath):
-        """Returns ``True`` if the input path is a directory and writeable."""
+        """A method to check that path is a directory, and that the system has 
+        write permissions.
+        
+        Parameters
+        ----------
+
+        dirpath : str
+
+            The filepath to the directory in question. 
+
+        Returns
+        -------
+
+        True : bool
+
+            If the input path is a directory and writeable.
+
+        False : bool
+
+            If the input path is either not a directory or is not writeable
+        """
         return os.path.isdir(dirpath) and os.access(dirpath, os.W_OK)
 
 
     def size(self):
-        """Return the number of total activities in the improted database, if the database is not empty"""
+        """A method to get the number of total activities in the imported database, 
+        if the database is not empty
+
+        Returns
+        -------
+        
+        db_activities : str
+
+            A count of the total activities in the db. 
+
+        Raises
+        ------
+
+        ImportError
+
+            If the db fails to load.
+
+        """
         if not self.db:
             raise ImportError ('Database is empty!')
         else:
-            return (('Total activities in {} database is {}'.format(self.database_name, len(self.db))), len(self.db))
+            db_activities = (('Total activities in {} database is {}'.format(self.database_name, len(self.db))), len(self.db))
+            return db_activities
         
     def data(self):
+        """A method to load the db."""
         return self.db.load()
     
     def activities(self):
-        """return a list of all activities in this database"""
+        """A method for getting a list of all activities in a `self.db`. 
+
+        Returns 
+        -------
+        db_activities_list : list
+
+            A list of all activities in this database.
+
+        Raises
+        ------
+        
+        TypeError
+
+            If dict keys being iterated over cannot be interpreted as an activity.
+
+        """
         try:
             return [self.db.get(ds[1]) for ds in self.data()]
         except TypeError:
             raise Exception ("Key {} cannot be understood as an activity".format(ds[1]) for ds in self.db.load())
             
     def statistics (self):
-        """get the number of activities nad exchanges in the database"""
+        """A method to get the number of activities and exchanges in the database.
+
+        Returns
+        -------
+
+        activities_and_num_of_exchanges : str
+
+            A count of all datasets and exchanges in `self.db`. 
+
+        """
 #        num_exchanges = sum([len(ds.get('exchanges', [])) for ds in self.db.load()])
         data = self.data()
         num_exchanges = sum([len((self.db.get(ds[1])).exchanges()) for ds in data])
         num_datasets = len(self.db)
-        return ('Number of activities and exchanges:', num_datasets, num_exchanges)
+        activities_and_num_of_exchanges = ('Number of activities and exchanges:', num_datasets, num_exchanges)
+        return activities_and_num_of_exchanges
     
     def delete(self):
-        """delete a database that has been installed previously"""
+        """A method to delete a previously installed database."""
         assert self.database_name in databases, "Database you tend to delete doesn't exist"
         del databases[self.database_name]
     
     def delete_activity (self,activity):
-        """Delete a flow from database"""
+        """A method to delete a flow from database.
+        
+        Parameters
+        ----------
+
+        activity: str
+
+            The flow to be deleted.
+        """
         data = self.db.load()
         del data[activity]
         from bw2data.utils import recursive_str_to_unicode
@@ -120,13 +200,31 @@ class SetUpDatabase():
 #        return (exchgs, 'Total number of exchanges: {}'.format(num))  
 
     def all_exchanges (self):
-        """get all exchanges in the database"""
+        """A method to get all exchanges in `self.db`
+
+        Returns
+        -------
+        exchanges_description : str
+
+            A statement of the total number of exchanges in the db.
+        """
         data = self.data()
         all_exchgs = [(data[ds].get('exchanges',[])) for ds in data]
         num = len (all_exchgs)
-        return (all_exchgs, 'Total number of exchanges in the database {}:{}'.format(self.database_name, num))  
+        exchanges_description = (all_exchgs, 'Total number of exchanges in the database {}:{}'.format(self.database_name, num))
+        return   exchanges_description
             
     def uncertainty(self):
+        """A method to get the most common uncertainty type for `self.db`.
+
+        Returns
+        -------
+
+        most_common_uncertainty : str
+
+            The most common uncertainty type in the db. 
+
+        """
         if self.size:
             flow_type = lambda x: 'technosphere' if x != 'biosphere' else 'biosphere'
             uncert = []
@@ -134,10 +232,12 @@ class SetUpDatabase():
                 # obtain default uncertainty distribution for each exchanges in selected database 
                 objs = exchgs.data.get('uncertainty type', 0)
                 uncertainty_type = stats_arrays.uncertainty_choices[objs].description
-                uncert.append((flow_type(exchgs.type), uncertainty_type))           
-            return collections.Counter(uncert).most_common()  
+                uncert.append((flow_type(exchgs.type), uncertainty_type))
+                most_common_uncertainty = collections.Counter(uncert).most_common() 
+            return most_common_uncertainty
     
     def storeData(self):
+        """A method to write a binary representation of the db to a local file `MyExport.pickle`."""
          self.db_as_dict = self.db.load()
          with open('MyExport.pickle', 'wb') as f:
              pickle.dump(self.db_as_dict, f)
@@ -165,7 +265,23 @@ class SetUpDatabase():
     
 #def export_excel():
 def db_write_toExcel(lci_data, db_name):
-    """Write inventory database to Excel file. Returns the filepath to the spreadsheet file.
+    """A function to write inventory database to an Excel file. 
+
+    Parameters
+    ----------
+
+    lci_data : 
+
+    db_name : str
+
+        The name of the database. 
+
+    Returns
+    ------- 
+
+    fp : string
+
+        The filepath to the spreadsheet file.
     """
     #creat lci data sheet
     dirpath = os.path.join(os.path.abspath(os.path.dirname(__file__)),'database')
@@ -179,6 +295,35 @@ def db_write_toExcel(lci_data, db_name):
     row = 0
     
     def write_row(sheet, row, data, exchgs=True):
+        """A nested function to write a database row to an Excel file.
+
+        Parameters
+        ----------
+
+        sheet : file obj
+
+            The Excel file to write to.
+
+        row : int
+
+            The row to write.
+
+
+        data : dict
+
+            The data to be written to the db.
+
+        exchgs : boolean, optional
+
+            Include exchanges. Default is `True`
+
+        Raises
+        ------
+
+        ValueError
+
+            If `amount` not specified in `data`.
+        """
         sheet.write_string(row, 0, data.get('name', '(unknown)'), bold)
         #include both linked and unlinked exchanges
         if exchgs:
