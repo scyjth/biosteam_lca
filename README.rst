@@ -48,11 +48,26 @@ Prerequisites
 Setup
 -------------
 
-Choosing lci database and impact assessment methods
-****************************************************
+Linking to other LCA repositories
+***************************************************
 
 
-User can create models using life cycle inventory data/datasets from any of the supported databases (including any version of the ecoinvent database, ecoinvent license required):
+There has been more and more LCA researchers participating in open source communities. This `Dashboard <https://github.com/IndEcol/Dashboard/>`__  contains a list of all repositories for LCA researchers. BioSTEAM_LCA interfaces with these excellent packages to enable rapid translation of biorefinery designs/processes and laboratory scale results to systems-scale sustainability assessments. 
+
+If you have not done so, add the required conda channels to your conda config file. You also need to install brightway and eidl. 
+The recommended way (Sep 2020) to install with conda is:
+
+    $ conda install -c conda-forge -c cmutel -c haasad brightway2
+
+    $ conda install -c haasad eidl
+
+
+
+Choose LCI Databases and impact assessment methods
+***************************************************
+
+
+User can create models using life cycle inventory data/datasets from any of the supported databases (including any version of the ecoinvent database, ecoinvent license required). LCI Database serves as a central source of critically reviewed, consistent, and transparent data. It allows users to objectively review and compare analysis results based on similar data collection and analysis methods.
 
 Where the inventory inputs can be chosen from 
 
@@ -64,7 +79,19 @@ FORWAST     ``'forwast'``
 U.S LCI     ``'us-lci'``
 ==========  ================
 
-User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified, the default assessment methods are the `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__.
+User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__.
+
+==========================
+Default Impact categories     
+==========================
+ozone depletion
+climate change
+acidification
+eutrophication
+smog formation
+human health impacts
+ecotoxicity
+==========================
 
 
 License information
