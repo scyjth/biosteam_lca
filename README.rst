@@ -54,14 +54,13 @@ U.S LCI     ``'us-lci'``
 
 
 License information
--------------------
+~~~~~~~~~~~~~~~~
 
-See ``LICENSE.txt`` for information on the terms & conditions for usage
-of this software, and a DISCLAIMER OF ALL WARRANTIES.
+This project is licensed under the University of Illinois at Urbana-Champaign License. See the ``LICENSE.txt`` file for information on the terms & conditions, and a DISCLAIMER OF ALL WARRANTIES.
 
 
 About the authors
------------------
+~~~~~~~~~~~~~~~~
 
 BioSTEAM_LCA was created and developed by Dr. Rui Shi as part of the `Guest Group <http://engineeringforsustainability.com/>`__ and the `Center for Advanced Bioenergy and Bioproducts Innovation (CABBI) <https://cabbi.bio/>`__ at the `University of Illinois at Urbana-Champaign (UIUC) <https://illinois.edu/>`__. 
 
