@@ -13,7 +13,8 @@ name = 'biosteam_lca'
 __version__ = (0, 1)
 
 try:
-    from .setup import * # databases, methods, Database, SetUp
+    from .setup import * 
+    # databases, methods, Database, SetUp
 except ImportError:
     None
 from .method_finder import Method, MethodFinder

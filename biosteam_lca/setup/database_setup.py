@@ -236,18 +236,18 @@ class SetUpDatabase():
                 most_common_uncertainty = collections.Counter(uncert).most_common() 
             return most_common_uncertainty
     
-    def storeData(self):
-        """A method to write a binary representation of the db to a local file `MyExport.pickle`."""
-         self.db_as_dict = self.db.load()
-         with open('MyExport.pickle', 'wb') as f:
-             pickle.dump(self.db_as_dict, f)
+    # def storeData(self):
+    #     """A method to write a binary representation of the db to a local file `MyExport.pickle`."""
+    #     self.db_as_dict = self.db.load()
+    #     with open('MyExport.pickle', 'wb') as f:
+    #         pickle.dump(self.db_as_dict, f)
 
-    def _loadData(self):
-        db_file = open('MyExport.pickle', 'rb')
-        db = pickle.load(db_file)
-        for keys in db:
-            print (keys, '=>', db(keys))
-        db_file.close()
+    # def _loadData(self):
+    #     db_file = open('MyExport.pickle', 'rb')
+    #     db = pickle.load(db_file)
+    #     for keys in db:
+    #         print (keys, '=>', db(keys))
+    #     db_file.close()
 
 #    @staticmethod
     #def geto_locations():
