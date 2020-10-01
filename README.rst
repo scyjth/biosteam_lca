@@ -81,18 +81,6 @@ U.S LCI     ``'us-lci'``
 
 User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__.
 
-==========================
-Default Impact categories     
-==========================
-ozone depletion
-climate change
-acidification
-eutrophication
-smog formation
-human health impacts
-ecotoxicity
-==========================
-
 
 License information
 ~~~~~~~~~~~~~~~~
