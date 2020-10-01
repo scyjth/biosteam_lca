@@ -51,6 +51,7 @@ Setup
 User can create models using life cycle inventory data/datasets from any of the supported databases (including any version of the ecoinvent database, ecoinvent license required):
 
 Where the inventory inputs can be chosen from 
+
 ==========  ================
 Database    ``inputs``
 ==========  ================
@@ -59,7 +60,7 @@ FORWAST     ``'forwast'``
 U.S LCI     ``'us-lci'``
 ==========  ================
 
-User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified, the default assessment methods are the 'U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__.
+User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified, the default assessment methods are the `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__ 
 
 
 License information
