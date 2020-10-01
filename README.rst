@@ -40,13 +40,15 @@ Prerequisites
 - Alternatively, several open source life cycle inventory databases are built in, such as [FORWAST](https://lca-net.com/projects/show/forwast/)
 
 Where the inventory inputs can be chosen from any of the supported databases:
+
 ==========  ================
-Database    ``autoapi_type``
+Database    ``inputs``
 ==========  ================
 Ecoinvent   ``'ecoinvent'``
 FORWAST     ``'forwast'``
 U.S LCI     ``'us-lci'``
 ==========  ================
+
 
 License information
 -------------------
@@ -66,5 +68,5 @@ BioSTEAM_LCA was created and developed by Dr. Rui Shi as part of the `Guest Grou
 
 References
 ----------
-.. Shi, Rui and Jeremy S. Guest, "BioSTEAM-LCA: An Integrated Modeling Framework for Agile Life Cycle Assessment of Biorefineries Under Uncertainty. " ACS Sustainable Chemistry & Engineering. Under review. 
+[1] Shi, Rui and Jeremy S. Guest, "BioSTEAM-LCA: An Integrated Modeling Framework for Agile Life Cycle Assessment of Biorefineries Under Uncertainty. " ACS Sustainable Chemistry & Engineering. Under review. 
 
