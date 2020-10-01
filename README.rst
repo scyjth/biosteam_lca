@@ -1,5 +1,5 @@
 =========================================================================
-BioSTEAM_LCA: The Biorefinery Simulation Module with Techno-Economic Analysis and Life Cycle Assessment
+BioSTEAM_LCA: Biorefinery Simulation Module with Techno-Economic Analysis and Life Cycle Assessment
 =========================================================================
 
 .. image:: http://img.shields.io/pypi/v/biosteam-lca.svg?style=flat
