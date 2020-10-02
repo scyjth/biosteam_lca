@@ -42,8 +42,7 @@ Prerequisites
 -------------
 
 - Valid [ecoinvent](https://www.ecoinvent.org) login credentials
-- Alternatively, several open source life cycle inventory databases are built in, such as [FORWAST](https://lca-net.com/projects/show/forwast/)
-
+- Alternatively, several open source life cycle inventory databases are built in, such as `FORWAST <https://lca-net.com/projects/show/forwast/>`__. 
 
 Setup
 -------------
