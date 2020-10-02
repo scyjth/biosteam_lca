@@ -59,7 +59,7 @@ The recommended way (Sep 2020) to install with conda is:
 
     $ conda install -c haasad eidl
 
-There has been more and more LCA researchers participating in open source communities. BioSTEAM_LCA interfaces with these excellent packages to enable rapid translation of biorefinery designs/processes and laboratory scale results to systems-scale sustainability assessments. This `Dashboard <https://github.com/IndEcol/Dashboard/>`__  contains a list of all repositories for LCA researchers. 
+There has been more and more LCA researchers participating in open source communities. BioSTEAM_LCA interfaces with these excellent packages to enable rapid translation of biorefinery designs/processes and laboratory scale results to systems-scale sustainability assessments. This `Dashboard <https://github.com/IndEcol/Dashboard/>`__  contains a list of all related repositories for LCA researchers. 
 
 Choose LCI Databases and impact assessment methods
 ***************************************************
