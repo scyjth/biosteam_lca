@@ -78,7 +78,7 @@ U.S LCI     ``'us_lci'``
 Customized  ``'user_customized'``
 ==========  =====================
 
-User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__.
+User can choose from over 840+ different life cycle impact assessment (LCIA) methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__, which provides characterization factors for LCIA, industrial ecology, and sustainability metrics.
 
 
 License information
