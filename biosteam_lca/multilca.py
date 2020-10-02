@@ -168,6 +168,7 @@ class MultiLCA:
         if timer ==True:
             print ('MultiLCA done in {:.2f} seconds.'.format(time.clock()-start_time))
         headers = ['Impact Category', 'Impact Score']
+        
         if table == True:
             print (tabulate(multi_score, headers=headers, tablefmt='grid'))   
 #         return (output, lcia_methods)
@@ -268,9 +269,9 @@ class MultiLCA:
 
             The flow to apply.
 
-        amount :
+        amount : int
 
-            
+            Unit demand. 
 
         methods :
 

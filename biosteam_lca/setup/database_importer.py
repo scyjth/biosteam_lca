@@ -194,6 +194,7 @@ class DatabaseImporter(object):
         url : string, optional
             The url from which to download the forwast database. Default is to download
             from `http://lca-net.com/wp-content/uploads/forwast.bw2package.zip`.
+            may requires updates periodically
 
         Returns
         -------
@@ -234,7 +235,6 @@ class DatabaseImporter(object):
             filename = "forwast.bw2package.zip"
             filepath = os.path.join(fp, filename)
             
-            #Offical forwast website https://lca-net.com/projects/show/forwast/, may requires updating url from time to time
             r = requests.get(url, stream=True) 
             if r.status_code != 200:
                 raise ("URL {} returns status code {}.".format(url), r.status_code)

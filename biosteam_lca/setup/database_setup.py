@@ -164,7 +164,7 @@ class SetUpDatabase():
             A count of all datasets and exchanges in `self.db`. 
 
         """
-#        num_exchanges = sum([len(ds.get('exchanges', [])) for ds in self.db.load()])
+#        num_exchanges = sum([len(ds.get('exchanges', [])) for ds in self.db.load()]) 
         data = self.data()
         num_exchanges = sum([len((self.db.get(ds[1])).exchanges()) for ds in data])
         num_datasets = len(self.db)
@@ -193,17 +193,18 @@ class SetUpDatabase():
         self.db.process()
         print ("deleted activity flow: %s" % (str(activity)))
 
-#    def exchanges (self, activity):
-#        """get exchanges for the activity"""
-#        exchgs = self.data[activity].get('exchanges',[])
-#        num = len (activity.exchanges())
-#        return (exchgs, 'Total number of exchanges: {}'.format(num))  
+    # def exchanges (self, activity):
+    #     """get exchanges for the activity"""
+    #     exchgs = self.data[activity].get('exchanges',[])
+    #     num = len (activity.exchanges())
+    #     return (exchgs, 'Total number of exchanges: {}'.format(num))  
 
     def all_exchanges (self):
         """A method to get all exchanges in `self.db`
 
         Returns
         -------
+        
         exchanges_description : str
 
             A statement of the total number of exchanges in the db.
