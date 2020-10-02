@@ -1,5 +1,5 @@
 =========================================================================
-BioSTEAM_LCA: Biorefinery Simulation Module with Techno-Economic Analysis and Life Cycle Assessment
+BioSTEAM_LCA: The Biorefinery Simulation Module with Techno-Economic Analysis and Life Cycle Assessment
 =========================================================================
 
 .. image:: http://img.shields.io/pypi/v/biosteam-lca.svg?style=flat
@@ -69,13 +69,14 @@ User can create models using life cycle inventory data/datasets from any of the 
 
 Where the inventory inputs can be chosen from 
 
-==========  ================
+==========  =====================
 Database    ``inputs``
-==========  ================
+==========  =====================
 Ecoinvent   ``'ecoinvent'``
 FORWAST     ``'forwast'``
-U.S LCI     ``'us-lci'``
-==========  ================
+U.S LCI     ``'us_lci'``
+Customized  ``'user_customized'``
+==========  =====================
 
 User can choose from over 840+ different impact assessment methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be `U.S. EPA TRACI2.0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`__.
 
