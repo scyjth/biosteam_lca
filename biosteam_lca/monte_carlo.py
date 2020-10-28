@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 ##THIS IS A DRAFT VERSION
 
 
-def uncertainify(data, distribution=None, bounds_factor=0.1, sd_factor=0.1):
+def add_uncertainify(data, distribution=None, bounds_factor=0.1, sd_factor=0.1):
     """
     Add rough uncertainty to exchanges. This function only apply to exchanges with no uncertainty type or uncertainty type ``UndefinedUncertainty``. This does not change production exchanges!
     
