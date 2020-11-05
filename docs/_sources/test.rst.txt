@@ -1,0 +1,45 @@
+test package
+============
+
+Submodules
+----------
+
+test.importer module
+--------------------
+
+.. automodule:: importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+test.multilca module
+--------------------
+
+.. automodule:: multilca
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+test.reset\_lcia module
+-----------------------
+
+.. automodule:: reset_lcia
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+test.setup module
+-----------------
+
+.. automodule:: setup
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: test
+   :members:
+   :undoc-members:
+   :show-inheritance:

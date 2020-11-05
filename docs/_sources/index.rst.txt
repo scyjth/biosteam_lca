@@ -1,0 +1,30 @@
+.. biostream_lca documentation master file, created by
+   sphinx-quickstart on Wed Oct 28 17:03:57 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to biosteam_lca's documentation!
+=========================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: biosteam_lca:
+
+   modules
+
+.. image:: TOC_V2.png
+   :width: 900px
+   :height: 450px
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
+BioSTEAM_LCA: The Biorefinery Simulation Module with Techno-Economic Analysis and Life Cycle Assessment
+-------------------
+
+Biosteam_LCA is an an agile life cycle assessment (LCA) platform that enables the fast and flexible evaluation of the life cycle environmental impacts of biorefineries under uncertainty. It interfaces with BioSTEAM to simultaneously characterize environmental and economic metrics while enabling complete flexibility for user-defined biofuels, bioproducts, biomass compositions, and processes. This open-source, installable package allows users to perform streamlined LCAs of biorefineries. The focus of BioSTEAM-LCA is to streamline and automate early-stage environmental impact analyses of processes and technologies, and to enable rigorous sensitivity and uncertainty analyses linking process design, performance, economics, and environmental impacts.
+
+This package is continuing to develop, with new features and extensions being added.
+
+.. toctree::
+	1_installation.rst

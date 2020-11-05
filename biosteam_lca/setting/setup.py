@@ -13,7 +13,7 @@ import os
 # import win32com.client as win32
 from . import peewee, Database, databases
 import xlsxwriter
-from .database_importer import Importer
+from .importer import Importer
 try:
    import cPickle as pickle
 except:

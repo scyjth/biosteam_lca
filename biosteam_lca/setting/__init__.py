@@ -23,8 +23,8 @@ except ImportError:
     from collections import Mapping
 #from .util import  get_activity  
 from ._unicode import UnicodeReader
-from .database_setup import SetUp
-from .database_importer import Importer
+from .setup import SetUp
+from .importer import Importer
 
 def static_calc (flow, amount, methods, factorize=False):
     """Establish static calculation basis. By default no factorization."""

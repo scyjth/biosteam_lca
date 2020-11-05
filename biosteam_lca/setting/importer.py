@@ -23,7 +23,7 @@ import brightway2 as bw2
 from pathlib import Path
 import subprocess
 import warnings
-from biosteam_lca.setup import strategies, importers
+from biosteam_lca.setting import strategies, importers
 #try:
 #   import cPickle as pickle
 #except:

@@ -6,7 +6,7 @@ Created on Thu Apr 18 14:23:21 2019
 """
 from __future__ import unicode_literals
 import os 
-from .setup import methods, Database
+from .setting import methods, Database
 #from .setup.util import get_activity
 import operator
 import sys

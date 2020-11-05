@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; biosteam_lca 1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Code documentation" href="code.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> biosteam_lca
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">biosteam_lca:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Technical Documentation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linking-to-other-lca-repositories">Linking to other LCA repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choose-lci-databases-and-impact-assessment-methods">Choose LCI Databases and impact assessment methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license-information">License information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-authors">About the authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">biosteam_lca</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Getting started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/1_installation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Get the latest version from  <a class="reference external" href="https://pypi.org/project/biosteam-lca/">PyPi</a>. This package can be installed through pip:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install biosteam_lca
+</pre></div>
+</div>
+<p>To get the git version, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git://https://github.com/scyjth/biosteam_lca/tree/master/biosteam_lca
+</pre></div>
+</div>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Option 1. Valid [ecoinvent](<a class="reference external" href="https://www.ecoinvent.org">https://www.ecoinvent.org</a>) login credentials
+Option 2. Alternatively, several open source life cycle inventory databases are built in, such as <a class="reference external" href="https://lca-net.com/projects/show/forwast/">FORWAST</a>.</p>
+<div class="section" id="linking-to-other-lca-repositories">
+<h3>Linking to other LCA repositories<a class="headerlink" href="#linking-to-other-lca-repositories" title="Permalink to this headline">¶</a></h3>
+<p>If you have not done so, add the required conda channels to your conda config file. You also need to install brightway and eidl. The recommended way (Sep 2020) to install with conda is:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> conda install -c conda-forge -c cmutel -c haasad brightway2
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> conda install -c haasad eidl
+</pre></div>
+</div>
+<p>There has been more and more LCA researchers participating in open source communities. BioSTEAM_LCA interfaces with these excellent packages to enable rapid translation of biorefinery designs/processes and laboratory scale results to systems-scale sustainability assessments. This <a class="reference external" href="https://github.com/IndEcol/Dashboard/">Dashboard</a> contains a list of all related repositories for LCA researchers.</p>
+</div>
+<div class="section" id="choose-lci-databases-and-impact-assessment-methods">
+<h3>Choose LCI Databases and impact assessment methods<a class="headerlink" href="#choose-lci-databases-and-impact-assessment-methods" title="Permalink to this headline">¶</a></h3>
+<p>User can create models using life cycle inventory data/datasets from any of the supported databases (including any version of the ecoinvent database, ecoinvent license required). LCI Database serves as a central source of critically reviewed, consistent, and transparent data. It allows users to objectively review and compare analysis results based on similar data collection and analysis methods.</p>
+<p>Where the inventory inputs can be chosen from</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 61%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Database</p></td>
+<td><p>inputs</p></td>
+</tr>
+<tr class="row-even"><td><p>Ecoinvent</p></td>
+<td><p>‘ecoinvent’</p></td>
+</tr>
+<tr class="row-odd"><td><p>FORWAST</p></td>
+<td><p>‘forwast’</p></td>
+</tr>
+<tr class="row-even"><td><p>U.S LCI</p></td>
+<td><p>‘us_lci’</p></td>
+</tr>
+<tr class="row-odd"><td><p>Customized</p></td>
+<td><p>‘user_customized’</p></td>
+</tr>
+</tbody>
+</table>
+<p>User can choose from over 840+ different life cycle impact assessment (LCIA) methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be  <a class="reference external" href="https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/">US EPA TRACI2 0</a> , which provides characterization factors for LCIA, industrial ecology, and sustainability metrics.</p>
+</div>
+<div class="section" id="license-information">
+<h3>License information<a class="headerlink" href="#license-information" title="Permalink to this headline">¶</a></h3>
+<p>This project is licensed under the University of Illinois at Urbana-Champaign License. See the LICENSE.txt file for information on the terms &amp; conditions, and a DISCLAIMER OF ALL WARRANTIES.</p>
+</div>
+</div>
+<div class="section" id="about-the-authors">
+<h2>About the authors<a class="headerlink" href="#about-the-authors" title="Permalink to this headline">¶</a></h2>
+<p>BioSTEAM_LCA was created and developed by Dr. Rui Shi as part of the <a class="reference external" href="http://engineeringforsustainability.com/">Guest Group</a> and the Center for Advanced Bioenergy and Bioproducts Innovation (CABBI) <a class="reference external" href="https://cabbi.bio/">Center for Advanced Bioenergy and Bioproducts Innovation CABBI</a>  at the  <a class="reference external" href="https://illinois.edu/">University of Illinois at Urbana Champaign UIUC</a>.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>[1] Shi, Rui and Jeremy S. Guest, “BioSTEAM-LCA: An Integrated Modeling Framework for Agile Life Cycle Assessment of Biorefineries Under Uncertainty. ” ACS Sustainable Chemistry &amp; Engineering. Under review.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="code.html" class="btn btn-neutral float-left" title="Code documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Lynn Shi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

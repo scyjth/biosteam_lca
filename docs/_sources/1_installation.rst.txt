@@ -1,0 +1,83 @@
+============
+Getting started
+============
+
+.. highlight:: console
+
+------------------
+Installation
+------------------
+
+Get the latest version from  `PyPi <https://pypi.org/project/biosteam-lca/>`_. This package can be installed through pip:
+
+::
+
+   $ pip install biosteam_lca
+
+To get the git version, run:
+
+::
+
+ $ git clone git://https://github.com/scyjth/biosteam_lca/tree/master/biosteam_lca
+
+
+------------------
+Prerequisites
+------------------
+
+Option 1. Valid [ecoinvent](https://www.ecoinvent.org) login credentials
+Option 2. Alternatively, several open source life cycle inventory databases are built in, such as `FORWAST <https://lca-net.com/projects/show/forwast/>`_.
+
+
+Linking to other LCA repositories
+--------------------------------------------------------------------------------------
+
+If you have not done so, add the required conda channels to your conda config file. You also need to install brightway and eidl. The recommended way (Sep 2020) to install with conda is:
+
+::
+
+ $ conda install -c conda-forge -c cmutel -c haasad brightway2
+
+::
+
+ $ conda install -c haasad eidl
+
+There has been more and more LCA researchers participating in open source communities. BioSTEAM_LCA interfaces with these excellent packages to enable rapid translation of biorefinery designs/processes and laboratory scale results to systems-scale sustainability assessments. This `Dashboard <https://github.com/IndEcol/Dashboard/>`_ contains a list of all related repositories for LCA researchers.
+
+
+Choose LCI Databases and impact assessment methods
+--------------------------------------------------------------------------------------
+
+User can create models using life cycle inventory data/datasets from any of the supported databases (including any version of the ecoinvent database, ecoinvent license required). LCI Database serves as a central source of critically reviewed, consistent, and transparent data. It allows users to objectively review and compare analysis results based on similar data collection and analysis methods.
+
+Where the inventory inputs can be chosen from
+
++------------+-------------------+
+| Database   | inputs            |
++------------+-------------------+
+| Ecoinvent  | 'ecoinvent'       |
++------------+-------------------+
+| FORWAST    | 'forwast'         |
++------------+-------------------+
+| U.S LCI    | 'us_lci'          |
++------------+-------------------+
+| Customized | 'user_customized' |
++------------+-------------------+
+
+User can choose from over 840+ different life cycle impact assessment (LCIA) methods, and automatically calculate the impact scores for any unit processes. Other than specified by user, the default assessment methods will be  `US EPA TRACI2 0 <https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci/>`_ , which provides characterization factors for LCIA, industrial ecology, and sustainability metrics.
+
+
+License information
+--------------------------------------------------------------------------------------
+This project is licensed under the University of Illinois at Urbana-Champaign License. See the LICENSE.txt file for information on the terms & conditions, and a DISCLAIMER OF ALL WARRANTIES.
+
+--------------------------------------------------------------------------------------
+About the authors
+--------------------------------------------------------------------------------------
+
+BioSTEAM_LCA was created and developed by Dr. Rui Shi as part of the `Guest Group <http://engineeringforsustainability.com/>`_ and the Center for Advanced Bioenergy and Bioproducts Innovation (CABBI) `Center for Advanced Bioenergy and Bioproducts Innovation CABBI <https://cabbi.bio/>`_  at the  `University of Illinois at Urbana Champaign UIUC <https://illinois.edu/>`_.
+
+--------------------------------------------------------------------------------------
+References
+--------------------------------------------------------------------------------------
+[1] Shi, Rui and Jeremy S. Guest, "BioSTEAM-LCA: An Integrated Modeling Framework for Agile Life Cycle Assessment of Biorefineries Under Uncertainty. " ACS Sustainable Chemistry & Engineering. Under review.

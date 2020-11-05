@@ -4,7 +4,7 @@ Created on Sun Jan 20 15:36:43 2019
 
 @author: cyshi
 """
-from .setup import Database
+from .setting import Database
 from copy import deepcopy
 import warnings
 from bw2data.backends.single_file import Activity

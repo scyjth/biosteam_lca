@@ -1,0 +1,1017 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Code documentation &mdash; biosteam_lca 1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started" href="1_installation.html" />
+    <link rel="prev" title="Technical Documentation" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> biosteam_lca
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">biosteam_lca:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Technical Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Code documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-importer">importer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-multilca">multilca module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reset-lcia-module">reset_lcia module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-setup">setup module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-code">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="1_installation.html">Getting started</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">biosteam_lca</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">Technical Documentation</a> &raquo;</li>
+        
+      <li>Code documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/code.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="code-documentation">
+<h1>Code documentation<a class="headerlink" href="#code-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-importer">
+<span id="importer-module"></span><h2>importer module<a class="headerlink" href="#module-importer" title="Permalink to this headline">¶</a></h2>
+<p>Created on Sun Jan 20 15:36:43 2019</p>
+<p>&#64;author: cyshi</p>
+<dl class="py class">
+<dt id="importer.DatabaseImporter">
+<em class="property">class </em><code class="sig-prename descclassname">importer.</code><code class="sig-name descname">DatabaseImporter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c_path</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#importer.DatabaseImporter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A quick and convenient way to import life cycle inventory databases, including
+commercial and public databases. This object provides an convenient way to
+download, map and import the SQLite backend to brightway2.</p>
+<dl class="py attribute">
+<dt id="importer.DatabaseImporter.c_path">
+<code class="sig-name descname">c_path</code><a class="headerlink" href="#importer.DatabaseImporter.c_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The absolute path to the current working directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="importer.DatabaseImporter.dirpath">
+<code class="sig-name descname">dirpath</code><a class="headerlink" href="#importer.DatabaseImporter.dirpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>The abolute path to the database directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="importer.DatabaseImporter.ecoinvent_db">
+<code class="sig-name descname">ecoinvent_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">download_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">store_download</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">Login_credentials</span></em><span class="sig-paren">)</span><a class="headerlink" href="#importer.DatabaseImporter.ecoinvent_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to log in to ecoinvent user account, downlad and import ecoinvent
+database to current project based on brightway framework.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ecoinvent is a commerial databse. Login credential is required before
+acessing ecoinvent database through Biosteam_lca.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>**Login_credentials</strong> (<em>dict</em>) – <ul>
+<li><dl class="simple">
+<dt>username<span class="classifier">str</span></dt><dd><p>Ecoinvent username</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>password<span class="classifier">str</span></dt><dd><p>Ecoivnent password</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>version<span class="classifier">str</span></dt><dd><p>Avaiable database version</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>system_model<span class="classifier">str</span></dt><dd><p>System models. The ecoinvent version 3 database offers three system
+models to choose from:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Cut-Off: The system model Allocation, cut-off by classification.</p></li>
+</ul>
+<p>For users new to LCI databases, ecoinvent recommends using the
+cut-off system model when starting to work with ecoinvent version 3.
+<a class="reference external" href="https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/">https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/</a>
+system-models-in-ecoinvent-3.html</p>
+<ul class="simple">
+<li><p>APOS: The system model Allocation at the point of substitution</p></li>
+<li><p>Consequential: The system model substitution, consequential</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
+</p></li>
+<li><p><strong>download_path</strong> (<em>str</em><em>, </em><em>optional</em>) – Default is to download to temporary directory, ‘.7z file’ will be removed
+after succefful import ecoinvent database. Otherwise user can specify
+specific download path.</p></li>
+<li><p><strong>store_download</strong> (<em>bool</em><em>, </em><em>optional</em>) – Default is to store the the ‘.7z file’. Otherwise ‘False’ if no
+download_path is provided.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>db_name</strong> – The name of the ecoinvent_db.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Ecoinvent is one of the most comprehensive LCI databases based in Europe,
+with over 14,700 LCI datasets in many areas, such as energy supply, agriculture,
+transport, biofuels and biomaterials, bulk and specialty chemicals,
+construction materials, wood, and waste treatment. Current latest version is
+ecoinvent 3.5, which builds upon all previous versions of the database.</p>
+<p>LCI  contain only inputs and outputs to and from biosphere and one output to
+technosphere (the reference product).</p>
+<p class="rubric">References</p>
+<p>[1]Wernet, G., Bauer, C., Steubing, B., Reinhard, J., Moreno-Ruiz, E.,
+and Weidema, B., 2016. The ecoinvent database version 3 (part I): overview
+and methodology. The International Journal of Life Cycle Assessment,
+[online] 21(9), pp.1218–1230.</p>
+<p>[2]Ecoinvent, Allocation cut-off by classification, accessed [Aug 12 2019],
+available at <a class="reference external" href="https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/">https://www.ecoinvent.org/database/system-models-in-ecoinvent-3/</a>
+cut-off-system-model/allocation-cut-off-by-classification.html</p>
+<p>[3]Ecoinvent, What is the structure of the data that ecoinvent offers?,
+accessed [Aug 13 2019], avaiable at <a class="reference external" href="https://www.ecoinvent.org/support/faqs/">https://www.ecoinvent.org/support/faqs/</a>
+first-time-users/what-is-the-structure-of-the-data-that-ecoinvent-offers.html</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="importer.DatabaseImporter.forwast_db">
+<code class="sig-name descname">forwast_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span><span class="o">=</span><span class="default_value">'http://lca-net.com/wp-content/uploads/forwast.bw2package.zip'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#importer.DatabaseImporter.forwast_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method for downloading and installing <cite>forwast database</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>url</strong> (<em>string</em><em>, </em><em>optional</em>) – The url from which to download the forwast database. Default is to download
+from <cite>http://lca-net.com/wp-content/uploads/forwast.bw2package.zip</cite>.
+may requires updates periodically</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>sp</strong> – The initialized database.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>FORWAST is a open source database that developed and managed by
+&lt;2.-0 LCA consultants&gt;, under the ” EU’s Sixth Framework Programme –
+European Union”. Forwast database includes “material stocks, waste
+quantities and environmental indicators based on detailed
+environmentally extended economic and physical input-output
+matrices (IO-tables) based on the national accounting systems and
+other statistics.” The database is also available in SimaPro
+under “EU and DK Input Output library”.</p>
+<p>[1] Schmidt, J. H., Weidema, B. P., &amp; Suh, S. (2010). EU-FORWAST project.
+Deliverable no. 6.4. Documentation of the final model used for the
+scenario analyses. In Tech. Rep..</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="importer.DatabaseImporter.inspect">
+<em class="property">static </em><code class="sig-name descname">inspect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sp</span></em>, <em class="sig-param"><span class="n">db_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#importer.DatabaseImporter.inspect" title="Permalink to this definition">¶</a></dt>
+<dd><p>A static method to check for any unlinked exchange in a given database.
+If found, it will be the user’s decision to if or not continue writing to
+SQLite3 backend.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sp</strong> (<em>obj</em>) – The initialized database.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>datasets</strong> (<em>int</em>) – The total number of lci datasets extracted.</p></li>
+<li><p><strong>exchanges</strong> (<em>int</em>) – The total number of exchanges.</p></li>
+<li><p><strong>unlinked</strong> (<em>int</em>) – The total number of unlinked exchanges.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="importer.DatabaseImporter.user_customized_db">
+<code class="sig-name descname">user_customized_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">customized_db_xlsx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#importer.DatabaseImporter.user_customized_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method for importing user customized lci databases and datasets from an
+Excel file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>customized_db_xlsx</strong> (<em>str</em>) – The filename of a .xlsx file in the local directory. For example:
+<cite>example_user_customized_database.xlsx</cite></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>sp</strong> – The initialized database.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Database name will be matched with the ‘name’ field in the excel file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="importer.DatabaseImporter.uslci_db">
+<code class="sig-name descname">uslci_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#importer.DatabaseImporter.uslci_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method for initializing the <cite>us_lci</cite> database.
+Orignal repository was downloaded from the U.S. Federal LCA Commons|Ag data
+Commons platform.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>sp</strong> – The initialized database.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>obj</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Biosteam_lca leverages ecospold2 importer and excel importer. The Openlca Data
+Converter is used for converting from json format to ecospold format.
+Pre-processed databases are saved under biosteam_lca-database directory.</p>
+<p class="rubric">References</p>
+<p>[1] USDA National Agricultural Library. (2015). LCA Commons. Ag Data Commons.
+<a class="reference external" href="https://doi.org/10.15482/USDA.ADC/1173236">https://doi.org/10.15482/USDA.ADC/1173236</a>. Accessed 2020-03-23.</p>
+<p>[2] Michael Srocka, Juliane Franze, Andreas Ciroth, January 2010.
+Documentation openLCA format converter V2. Data Conversion from EcoSpold02
+to ILCD. GreenDeltaTC GmbH Berlin</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="importer.Importer">
+<code class="sig-prename descclassname">importer.</code><code class="sig-name descname">Importer</code><a class="headerlink" href="#importer.Importer" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#importer.DatabaseImporter" title="importer.DatabaseImporter"><code class="xref py py-class docutils literal notranslate"><span class="pre">importer.DatabaseImporter</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="importer.listDir">
+<code class="sig-prename descclassname">importer.</code><code class="sig-name descname">listDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#importer.listDir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-multilca">
+<span id="multilca-module"></span><h2>multilca module<a class="headerlink" href="#module-multilca" title="Permalink to this headline">¶</a></h2>
+<p>Created on Sun Jan 20 15:36:43 2019</p>
+<p>&#64;author: cyshi</p>
+<dl class="py class">
+<dt id="multilca.MultiLCA">
+<em class="property">class </em><code class="sig-prename descclassname">multilca.</code><code class="sig-name descname">MultiLCA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inventory_inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A means of conducting life cycle assessment calculations with multiple inventory
+inputs profiles, life cycle impact assessment methods, and variable amounts
+inherited from each unit. Pre-selection of database is required, if not specify,
+default database would be chosen.</p>
+<dl class="py attribute">
+<dt id="multilca.MultiLCA.inventory_inputs">
+<code class="sig-name descname">inventory_inputs</code><a class="headerlink" href="#multilca.MultiLCA.inventory_inputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inventory profile and amount for process inputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Call <cite>.run ()</cite> to generate results. Results return a numpy array with multiple
+impact results, calculate up to 800+ impact categories for each unit simultaneously.
+Call``.timer ()`` to see simulation time.</p>
+</div>
+<dl class="py attribute">
+<dt id="multilca.MultiLCA.ia_methods">
+<code class="sig-name descname">ia_methods</code><em class="property"> = [('TRACI', 'environmental impact', 'acidification'), ('TRACI', 'environmental impact', 'ecotoxicity'), ('TRACI', 'environmental impact', 'eutrophication'), ('TRACI', 'environmental impact', 'global warming'), ('TRACI', 'environmental impact', 'ozone depletion'), ('TRACI', 'environmental impact', 'photochemical oxidation'), ('TRACI', 'human health', 'carcinogenics'), ('TRACI', 'human health', 'non-carcinogenics'), ('TRACI', 'human health', 'respiratory effects, average')]</em><a class="headerlink" href="#multilca.MultiLCA.ia_methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="multilca.MultiLCA.multi_impact">
+<em class="property">static </em><code class="sig-name descname">multi_impact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">flow</span></em>, <em class="sig-param"><span class="n">amount</span></em>, <em class="sig-param"><span class="n">methods</span></em>, <em class="sig-param"><span class="n">factorize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">table</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA.multi_impact" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to calculate the life cycle impact assessment results for selected
+processes and multiple methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flow</strong> (<em>dict</em>) – The flow to apply.</p></li>
+<li><p><strong>amount</strong> (<em>int</em>) – Unit demand.</p></li>
+<li><p><strong>methods</strong> – The methods to apply.</p></li>
+<li><p><strong>factorize</strong> (<em>bool</em><em>, </em><em>optional</em>) – Factorize results. Default is <cite>False</cite>.</p></li>
+<li><p><strong>table</strong> (<em>bool</em><em>, </em><em>optional</em>) – Return results in tabular form. Default is <cite>False</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>multi_impact_result</strong> – The flow, and its associated scoresum.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>LCIAmethods is an inclusive list of all candidate LCIA methods that need to be tested.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="multilca.MultiLCA.multi_process">
+<code class="sig-name descname">multi_process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">single_impact</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA.multi_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to calculate the impact score of multiple process using selected
+lcia method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>simgle_impact</strong> – The single impact to consider.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>multi_process_result</strong> – A tuple containing numpy array of impact scores for each input.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If flow is not a dict.</p></li>
+<li><p><strong>ValueError</strong> – If flow dict is empty.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="multilca.MultiLCA.multi_process_calc">
+<code class="sig-name descname">multi_process_calc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">activities</span></em>, <em class="sig-param"><span class="n">single_impact</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA.multi_process_calc" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to calculate the impact score of multiple process using selected
+lcia method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>activities</strong> (<em>list</em>) – The activities to apply.</p></li>
+<li><p><strong>single_impact</strong> – The single impact to consider.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>multi_process_calc_result</strong> – A tuple containing a numpy array of impact scores for each input.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="multilca.MultiLCA.scores">
+<code class="sig-name descname">scores</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">timer</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">table</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">method</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA.scores" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to run multi impact LCA calculation by taking inputs, methods and
+amounts of each input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timer</strong> (<em>boolean</em><em>, </em><em>optional</em>) – Set to <cite>True</cite> to print() time taken to process. Default is <cite>False</cite>.</p></li>
+<li><p><strong>table</strong> (<em>boolean</em><em>, </em><em>optional</em>) – Set to <cite>True</cite> to print tabulated results.</p></li>
+<li><p><strong>method</strong> (<em>tuple</em><em>, </em><em>optional</em>) – LCIA Method; e.g. <cite>(‘TRACI’, ‘human health’, ‘carcinogenics’)</cite></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>results_dic</strong> – A dict containing numpy arrays with multiple impact results.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>User can choose one or more impact categories. If
+not specified, <cite>IPCC glowbal warming potencial</cite> is the default method.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="multilca.MultiLCA.set_ia_methods">
+<em class="property">classmethod </em><code class="sig-name descname">set_ia_methods</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set_methods</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA.set_ia_methods" title="Permalink to this definition">¶</a></dt>
+<dd><p>A &#64;classmethod to set user defined impact assessment method(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>set_methods</strong> – The methods to be set to <cite>ia_methods</cite>.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>cls.ia_methods</strong> – The newly set <cite>ia_methods</cite>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="multilca.MultiLCA.timer">
+<code class="sig-name descname">timer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#multilca.MultiLCA.timer" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to record the time of running analysis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>end_time</strong> – The difference between the start time and the end time of the process
+as expressed in seconds.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="multilca.export_matrix_to_excel">
+<code class="sig-prename descclassname">multilca.</code><code class="sig-name descname">export_matrix_to_excel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">row_names</span></em>, <em class="sig-param"><span class="n">col_names</span></em>, <em class="sig-param"><span class="n">matrix</span></em>, <em class="sig-param"><span class="n">filepath</span><span class="o">=</span><span class="default_value">'export.xlsx'</span></em>, <em class="sig-param"><span class="n">sheetname</span><span class="o">=</span><span class="default_value">'Export'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.export_matrix_to_excel" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to export inventory input matrix to excel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row_names</strong> (<em>list</em>) – A list of the row names to write to the Excel sheet.</p></li>
+<li><p><strong>col_names</strong> (<em>list</em>) – The column names to write to the Excel sheet.</p></li>
+<li><p><strong>matrix</strong> – The matrix from which to write.</p></li>
+<li><p><strong>filepath</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the file to write to. Default value is <cite>export.xlsx</cite>.</p></li>
+<li><p><strong>sheetname</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the Excel sheet. Default value is <cite>Export</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="multilca.static_calc">
+<code class="sig-prename descclassname">multilca.</code><code class="sig-name descname">static_calc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">flow</span></em>, <em class="sig-param"><span class="n">amount</span></em>, <em class="sig-param"><span class="n">methods</span></em>, <em class="sig-param"><span class="n">factorize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#multilca.static_calc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Establish static lca basis. By default no factorization.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="reset-lcia-module">
+<h2>reset_lcia module<a class="headerlink" href="#reset-lcia-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-setup">
+<span id="setup-module"></span><h2>setup module<a class="headerlink" href="#module-setup" title="Permalink to this headline">¶</a></h2>
+<p>Created on Sun Jan 20 15:36:43 2019</p>
+<p>&#64;author: cyshi</p>
+<dl class="py attribute">
+<dt id="setup.SetUp">
+<code class="sig-prename descclassname">setup.</code><code class="sig-name descname">SetUp</code><a class="headerlink" href="#setup.SetUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#setup.SetUpDatabase" title="setup.SetUpDatabase"><code class="xref py py-class docutils literal notranslate"><span class="pre">setup.SetUpDatabase</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="setup.SetUpDatabase">
+<em class="property">class </em><code class="sig-prename descclassname">setup.</code><code class="sig-name descname">SetUpDatabase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">database_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A means of setting up lci databases with brightway backend. Inventory data can
+be exported to excel. This class enables importing, managing,
+and manipulating the databases and activities and exchanges in the database.</p>
+<dl class="py attribute">
+<dt id="setup.SetUpDatabase.database_name">
+<code class="sig-name descname">database_name</code><a class="headerlink" href="#setup.SetUpDatabase.database_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the lci databases or datasets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="setup.SetUpDatabase.db">
+<code class="sig-name descname">db</code><a class="headerlink" href="#setup.SetUpDatabase.db" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of the database to be set up.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.activities">
+<code class="sig-name descname">activities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.activities" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method for getting a list of all activities in a <cite>self.db</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>db_activities_list</strong> – A list of all activities in this database.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>TypeError</strong> – If dict keys being iterated over cannot be interpreted as an activity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.all_exchanges">
+<code class="sig-name descname">all_exchanges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.all_exchanges" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to get all exchanges in <cite>self.db</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>exchanges_description</strong> – A statement of the total number of exchanges in the db.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="setup.SetUpDatabase.c_path">
+<code class="sig-name descname">c_path</code><em class="property"> = ''</em><a class="headerlink" href="#setup.SetUpDatabase.c_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.check_dir">
+<code class="sig-name descname">check_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.check_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to check that path is a directory, and that the system has
+write permissions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dirpath</strong> (<em>str</em>) – The filepath to the directory in question.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>True</strong> (<em>bool</em>) – If the input path is a directory and writeable.</p></li>
+<li><p><strong>False</strong> (<em>bool</em>) – If the input path is either not a directory or is not writeable</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.data">
+<code class="sig-name descname">data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to load the db.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to delete a previously installed database.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.delete_activity">
+<code class="sig-name descname">delete_activity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">activity</span></em><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.delete_activity" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to delete a flow from database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>activity</strong> (<em>str</em>) – The flow to be deleted.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="setup.SetUpDatabase.download_path">
+<code class="sig-name descname">download_path</code><em class="property"> = None</em><a class="headerlink" href="#setup.SetUpDatabase.download_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.size">
+<code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to get the number of total activities in the imported database,
+if the database is not empty</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>db_activities</strong> – A count of the total activities in the db.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>ImportError</strong> – If the db fails to load.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.statistics">
+<code class="sig-name descname">statistics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.statistics" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to get the number of activities and exchanges in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>activities_and_num_of_exchanges</strong> – A count of all datasets and exchanges in <cite>self.db</cite>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="setup.SetUpDatabase.store_download">
+<code class="sig-name descname">store_download</code><em class="property"> = True</em><a class="headerlink" href="#setup.SetUpDatabase.store_download" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="setup.SetUpDatabase.uncertainty">
+<code class="sig-name descname">uncertainty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#setup.SetUpDatabase.uncertainty" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to get the most common uncertainty type for <cite>self.db</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>most_common_uncertainty</strong> – The most common uncertainty type in the db.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="setup.db_write_toExcel">
+<code class="sig-prename descclassname">setup.</code><code class="sig-name descname">db_write_toExcel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lci_data</span></em>, <em class="sig-param"><span class="n">db_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#setup.db_write_toExcel" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function to write inventory database to an Excel file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lci_data</strong> – </p></li>
+<li><p><strong>db_name</strong> (<em>str</em>) – The name of the database.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>fp</strong> – The filepath to the spreadsheet file.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-code">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-code" title="Permalink to this headline">¶</a></h2>
+<p>Utilities needed to emulate Python’s interactive interpreter.</p>
+<dl class="py class">
+<dt id="code.InteractiveConsole">
+<em class="property">class </em><code class="sig-prename descclassname">code.</code><code class="sig-name descname">InteractiveConsole</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">locals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">'&lt;console&gt;'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#code.InteractiveInterpreter" title="code.InteractiveInterpreter"><code class="xref py py-class docutils literal notranslate"><span class="pre">code.InteractiveInterpreter</span></code></a></p>
+<p>Closely emulate the behavior of the interactive Python interpreter.</p>
+<p>This class builds on InteractiveInterpreter and adds prompting
+using the familiar sys.ps1 and sys.ps2, and input buffering.</p>
+<dl class="py method">
+<dt id="code.InteractiveConsole.interact">
+<code class="sig-name descname">interact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">banner</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">exitmsg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.interact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closely emulate the interactive Python console.</p>
+<p>The optional banner argument specifies the banner to print
+before the first interaction; by default it prints a banner
+similar to the one printed by the real Python interpreter,
+followed by the current class name in parentheses (so as not
+to confuse this with the real interpreter – since it’s so
+close!).</p>
+<p>The optional exitmsg argument specifies the exit message
+printed when exiting. Pass the empty string to suppress
+printing an exit message. If exitmsg is not given or None,
+a default message is printed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveConsole.push">
+<code class="sig-name descname">push</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.push" title="Permalink to this definition">¶</a></dt>
+<dd><p>Push a line to the interpreter.</p>
+<p>The line should not have a trailing newline; it may have
+internal newlines.  The line is appended to a buffer and the
+interpreter’s runsource() method is called with the
+concatenated contents of the buffer as source.  If this
+indicates that the command was executed or invalid, the buffer
+is reset; otherwise, the command is incomplete, and the buffer
+is left as it was after the line was appended.  The return
+value is 1 if more input is required, 0 if the line was dealt
+with in some way (this is the same as runsource()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveConsole.raw_input">
+<code class="sig-name descname">raw_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prompt</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.raw_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a prompt and read a line.</p>
+<p>The returned line does not include the trailing newline.
+When the user enters the EOF key sequence, EOFError is raised.</p>
+<p>The base implementation uses the built-in function
+input(); a subclass may replace this with a different
+implementation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveConsole.resetbuffer">
+<code class="sig-name descname">resetbuffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.resetbuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the input buffer.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="code.InteractiveInterpreter">
+<em class="property">class </em><code class="sig-prename descclassname">code.</code><code class="sig-name descname">InteractiveInterpreter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">locals</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for InteractiveConsole.</p>
+<p>This class deals with parsing and interpreter state (the user’s
+namespace); it doesn’t deal with input buffering or prompting or
+input file naming (the filename is always passed in explicitly).</p>
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.runcode">
+<code class="sig-name descname">runcode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">code</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.runcode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a code object.</p>
+<p>When an exception occurs, self.showtraceback() is called to
+display a traceback.  All exceptions are caught except
+SystemExit, which is reraised.</p>
+<p>A note about KeyboardInterrupt: this exception may occur
+elsewhere in this code, and may not always be caught.  The
+caller should be prepared to deal with it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.runsource">
+<code class="sig-name descname">runsource</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">'&lt;input&gt;'</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">'single'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.runsource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile and run some source in the interpreter.</p>
+<p>Arguments are as for compile_command().</p>
+<p>One of several things can happen:</p>
+<p>1) The input is incorrect; compile_command() raised an
+exception (SyntaxError or OverflowError).  A syntax traceback
+will be printed by calling the showsyntaxerror() method.</p>
+<p>2) The input is incomplete, and more input is required;
+compile_command() returned None.  Nothing happens.</p>
+<p>3) The input is complete; compile_command() returned a code
+object.  The code is executed by calling self.runcode() (which
+also handles run-time exceptions, except for SystemExit).</p>
+<p>The return value is True in case 2, False in the other cases (unless
+an exception is raised).  The return value can be used to
+decide whether to use sys.ps1 or sys.ps2 to prompt the next
+line.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.showsyntaxerror">
+<code class="sig-name descname">showsyntaxerror</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.showsyntaxerror" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the syntax error that just occurred.</p>
+<p>This doesn’t display a stack trace because there isn’t one.</p>
+<p>If a filename is given, it is stuffed in the exception instead
+of what was there before (because Python’s parser always uses
+“&lt;string&gt;” when reading from a string).</p>
+<p>The output is written by self.write(), below.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.showtraceback">
+<code class="sig-name descname">showtraceback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.showtraceback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the exception that just occurred.</p>
+<p>We remove the first stack item because it is our own code.</p>
+<p>The output is written by self.write(), below.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a string.</p>
+<p>The base implementation writes to sys.stderr; a subclass may
+replace this with a different implementation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="code.compile_command">
+<code class="sig-prename descclassname">code.</code><code class="sig-name descname">compile_command</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">'&lt;input&gt;'</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">'single'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.compile_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile a command and determine whether it is incomplete.</p>
+<p>Arguments:</p>
+<p>source – the source string; may contain n characters
+filename – optional filename from which source was read; default</p>
+<blockquote>
+<div><p>“&lt;input&gt;”</p>
+</div></blockquote>
+<p>symbol – optional grammar start symbol; “single” (default) or “eval”</p>
+<p>Return value / exceptions raised:</p>
+<ul class="simple">
+<li><p>Return a code object if the command is complete and valid</p></li>
+<li><p>Return None if the command is incomplete</p></li>
+<li><p>Raise SyntaxError, ValueError or OverflowError if the command is a
+syntax error (OverflowError and ValueError can be produced by
+malformed literals).</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt id="code.interact">
+<code class="sig-prename descclassname">code.</code><code class="sig-name descname">interact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">banner</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">readfunc</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">exitmsg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.interact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closely emulate the interactive Python interpreter.</p>
+<p>This is a backwards compatible interface to the InteractiveConsole
+class.  When readfunc is not specified, it attempts to import the
+readline module to enable GNU readline if it is available.</p>
+<p>Arguments (all optional, all default to None):</p>
+<p>banner – passed to InteractiveConsole.interact()
+readfunc – if not None, replaces InteractiveConsole.raw_input()
+local – passed to InteractiveInterpreter.__init__()
+exitmsg – passed to InteractiveConsole.interact()</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="1_installation.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="Technical Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Lynn Shi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
